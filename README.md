@@ -1,2 +1,3 @@
-# nami2017.peerb
-Kurz Nástroje a možnosti internetu JS 2017
+# Nástroje a možnosti internetu 
+
+Kurz vytvořený na platformě [Peer Blender](https://github.com/jan-martinek/peer-blender).
