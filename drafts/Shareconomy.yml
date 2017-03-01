@@ -1,0 +1,231 @@
+name: "Shareconomy"
+summary: "Sharing economy a závěr kurzu"
+goals: |
+  Tato lekce je poměrně stručná a krátká: podíváme se krátce na fenomén *sharing economy*, na závěr kurzu si přečteme společně esej o budoucnosti internetu a naposledy projdeme vytvořené projekty.
+reading: |   
+  Pojem *sharing economy* je poměrně diskutovanou záležitostí posledních let, proto jsou všechny informace dostupné v úkolech. (Výjimečně v&nbsp;kontextu tohoto semestru nejsou nabízeny žádné úvodní texty, neboť je jich i v českém kontextu poměrně mnoho.)
+  
+  > **Poznámka:** Jak jsem zdůrazňoval na semináři, klíčové je při popisu tohoto fenoménu vnímat dvě roviny: technologickou a společenskou. Nové formy sjednávání práce, nové business modely, nové způsoby zprostředkované interakce pomocí mobilních technologií: to vše proměňuje, jak fungují lidé, firmy, úřady nebo i města.
+  
+  Na závěr lekce a též tohoto semestru nás čeká článek [Everything is Broken](https://medium.com/message/everything-is-broken-81e5f33a24e1). Jde o poměrně dlouhý text, ale jde o čtivý esej. Díky znalostem nabytým v posledních dvou semestrech by měl obohatit vaše uvažování o technologiích, které nás obklopují.
+time:
+rubrics:
+  - 
+    metric: "Je popis služby v prvním úkolu dobře zpracovaný? (jedna z možností je vynechána záměrně)"
+    0: "Úkol zcela chybí nebo není srozumitelný."
+    2: "Popis je neúplný, popř. schází úvaha o přiřazení k fenoménu *sharing economy*."
+    3: "Úkol je zpracován dle zadání."
+  -
+    metric: "Je koncept *sharing economy* popsán dobře?"
+    0: "Úkol zcela chybí nebo není srozumitelný."
+    1: "Termín *sharing economy* je užíván nesprávně, popř. zdrojové texty jsou velmi krátké a neposkytují dostatek informací."
+    2: "Úkol je zpracován dle zadání a na základě solidních zdrojů."
+    3: "Úkol je zpracován dle zadání a je zhodnocen vlastní postoj autora či autorky úkolu."
+  -
+    metric: "Je úkol věnující se textu *Everything si broken* zpracován dobře?"
+    0: "Úkol zcela chybí nebo není srozumitelný."
+    1: "Shrnutí je neúplné, popř. schází formulace vlastního postoje."
+    2: "Shrnutí je dobré, ale formulovaný postoj se míjí s tím, co článek sděluje."
+    3: "Úkol je zpracován dle zadání."
+  -
+    metric: "Je úkol, týkající se týmového projektu zpracován dobře? (jedna z možností je vynechána záměrně)"
+    0: "Úkol zcela chybí nebo není srozumitelný."
+    2: "Úkol je zpracován dle zadání, ale kategorie nejsou zvoleny vhodně, popř. slovní hodnocení je snadno zpochybnitelné."
+    3: "Úkol je zpracován dle zadání."
+  - "Krátce okomentujte zvolené kategorie hodnocení v předposledním příkladu. Porovnejte je s kategoriemi, které jste zvolili vy sami."
+  - 
+    metric: "Je úkol týkající se Google Analytics zpracován dobře?"
+    0: "Úkol zcela chybí nebo není srozumitelný."
+    1: "Screenshot je vybrán špatně, popř. není dotažena jiná část úkolu."
+    2: "Screenshot je dobře vybrán, ale interpretace naměřených hodnot není správná."
+    3: "Úkol je zpracován dle zadání."
+preface: 
+---
+# shareconomy - příklad
+bloom: evaluate
+params:
+  service:
+    - Zipcar
+    - Uber
+    - Lyft
+    - BlaBlaCar
+    - AirBnB
+    - BMW Drive
+    - Whipcar
+    - Rekola
+    - Zimride
+    - Carpooling
+    - Udemy
+    - 9flats.com
+    - Liftago
+    - Kickstarter
+    - Indiegogo
+    - Startovač
+    - Hithit
+    - Skillshare
+    - Craigslist
+    - DogVacay
+    - TaskRabbit
+    - Getaround
+    - NeighbourGoods
+questions: |
+  Na základě vlastnoručně dohledaných zdrojů popište službu *%service%*. Zhodnoťte, zda patří k *sharing economy*.
+---
+# shareconomy - článek
+bloom: understand
+questions: |
+  Dohledejte si tři zdroje:
+  
+  - obecný popis fenoménu *sharing economy* (mimo Wikipedii)
+  - článěk pozitivně referující o konkrétní službě, kterou je možné zařadit do kategorie sharing economy
+  - článěk negativně referující o konkrétní službě, kterou je možné zařadit do kategorie sharing economy
+  
+  Na základě těchto tří zdrojů shrňte, co je to sharing economy a zhodnoťte vlastní postoj vůči tomuto fenoménu.
+---
+# everything is broken
+bloom: understand
+questions: |
+  Přečtěte si článek [Quinn Norton: Everything is Broken](https://medium.com/message/everything-is-broken-81e5f33a24e1). Krátce jej shrňte a zaujměte k němu (v několika větách) postoj.
+---
+# projekt
+bloom: evaluate
+params:
+  combinations:
+    - 
+      repo1: "https://github.com/VysocinaFlow/VysocinaFlow.github.io" 
+      site1: "VysocinaFlow.github.io"
+      repo2: "https://github.com/cteny/projekt.github.io" 
+      site2: "projekt.github.io"
+    - 
+      repo1: "https://github.com/VysocinaFlow/VysocinaFlow.github.io" 
+      site1: "VysocinaFlow.github.io"
+      repo2: "https://github.com/WendyDarling/HavelockatGITHUB.github.io" 
+      site2: "HavelockatGITHUB.github.io"
+    - 
+      repo1: "https://github.com/423783/423783.github.io" 
+      site1: "423783.github.io"
+      repo2: "https://github.com/picko010/picko010.github.io" 
+      site2: "picko010.github.io"
+    - 
+      repo1: "https://github.com/Luko01/luko01.github.io" 
+      site1: "luko01.github.io"
+      repo2: "https://github.com/maturo164/maturo164.github.io" 
+      site2: "maturo164.github.io"
+    - 
+      repo1: "https://github.com/PavlaVavrickova/dokiinka.github.io" 
+      site1: "dokiinka.github.io"
+      repo2: "https://github.com/dokiinka/dokiinka.github.io" 
+      site2: "dokiinka.github.io"
+    - 
+      repo1: "https://github.com/picko010/picko010.github.io" 
+      site1: "picko010.github.io"
+      repo2: "https://github.com/Luko01/luko01.github.io" 
+      site2: "luko01.github.io"
+    - 
+      repo1: "https://github.com/nobunaga1234/nobunaga1234.github.io" 
+      site1: "nobunaga1234.github.io"
+      repo2: "https://github.com/projectgorilla/projectgorilla.github.io" 
+      site2: "projectgorilla.github.io"
+    - 
+      repo1: "https://github.com/jandel/jandel.github.io" 
+      site1: "jandel.github.io"
+      repo2: "https://github.com/PavlaVavrickova/dokiinka.github.io" 
+      site2: "dokiinka.github.io"
+    - 
+      repo1: "https://github.com/projectgorilla/projectgorilla.github.io" 
+      site1: "projectgorilla.github.io"
+      repo2: "https://github.com/439185/439185.github.io" 
+      site2: "439185.github.io"
+    - 
+      repo1: "https://github.com/andywaltlova/andywaltlova.github.io" 
+      site1: "andywaltlova.github.io"
+      repo2: "https://github.com/VysocinaFlow/VysocinaFlow.github.io" 
+      site2: "VysocinaFlow.github.io"
+    - 
+      repo1: "https://github.com/dokiinka/dokiinka.github.io" 
+      site1: "dokiinka.github.io"
+      repo2: "https://github.com/jandel/jandel.github.io" 
+      site2: "jandel.github.io"
+    - 
+      repo1: "https://github.com/BuresKai/BuresKai.github.io" 
+      site1: "BuresKai.github.io"
+      repo2: "https://github.com/nobunaga1234/nobunaga1234.github.io" 
+      site2: "nobunaga1234.github.io"
+    - 
+      repo1: "https://github.com/450000/450000.github.io" 
+      site1: "450000.github.io"
+      repo2: "https://github.com/Elnessa/Elnessa.github.io" 
+      site2: "Elnessa.github.io"
+    - 
+      repo1: "https://github.com/WendyDarling/HavelockatGITHUB.github.io" 
+      site1: "HavelockatGITHUB.github.io"
+      repo2: "https://github.com/423783/423783.github.io" 
+      site2: "423783.github.io"
+    - 
+      repo1: "https://github.com/cteny/projekt.github.io" 
+      site1: "projekt.github.io"
+      repo2: "https://github.com/daebaknoona/daebaknoona.github.io" 
+      site2: "daebaknoona.github.io"
+    - 
+      repo1: "https://github.com/Elnessa/Elnessa.github.io" 
+      site1: "Elnessa.github.io"
+      repo2: "https://github.com/CoffeeWithMILF/daebaknoona.github.io" 
+      site2: "daebaknoona.github.io"
+    - 
+      repo1: "https://github.com/CoffeeWithMILF/daebaknoona.github.io" 
+      site1: "daebaknoona.github.io"
+      repo2: "https://github.com/450000/450000.github.io" 
+      site2: "450000.github.io"
+    - 
+      repo1: "https://github.com/maturo164/maturo164.github.io" 
+      site1: "maturo164.github.io"
+      repo2: "https://github.com/447926/447926.github.io" 
+      site2: "447926.github.io"
+    - 
+      repo1: "https://github.com/439185/439185.github.io" 
+      site1: "439185.github.io"
+      repo2: "https://github.com/andywaltlova/andywaltlova.github.io" 
+      site2: "andywaltlova.github.io"
+    - 
+      repo1: "https://github.com/447926/447926.github.io" 
+      site1: "447926.github.io"
+      repo2: "https://github.com/VysocinaFlow/VysocinaFlow.github.io" 
+      site2: "VysocinaFlow.github.io"
+    - 
+      repo1: "https://github.com/andywaltlova/andywaltlova.github.io" 
+      site1: "andywaltlova.github.io"
+      repo2: "https://github.com/BuresKai/BuresKai.github.io" 
+      site2: "BuresKai.github.io"
+    - 
+      repo1: "https://github.com/daebaknoona/daebaknoona.github.io" 
+      site1: "daebaknoona.github.io"
+      repo2: "https://github.com/453255/453255.github.io" 
+      site2: "453255.github.io"
+    - 
+      repo1: "https://github.com/453255/453255.github.io" 
+      site1: "453255.github.io"
+      repo2: "https://github.com/andywaltlova/andywaltlova.github.io" 
+      site2: "andywaltlova.github.io"
+questions: |
+    Vyberte si jeden z níže uvedených webů vytvářených týmově v kurzu (pro případy nefunkčnosti a náhodného přiřazení vašeho vlastního webu jsou nabízeny dvě možnosti):
+    
+    - %site1% ([repozitář](%repo1%), [web](http://%site1%))
+    - %site2% ([repozitář](%repo2%), [web](http://%site2%))
+    
+    Komplexně zhodnoťte zpracovaný projekt s ohledem na zadání projektů v průběhu semestru takto: Vytvořte pět základních kategorií hodnocení (dle toho, co považujete za důležité). V každé z nich ohodnoťte projekt na stupnici 1-5 (jako ve škole) a hodnocení vždy slovně zdůvodněte.
+    
+    Celé hodnocení by mělo obsahovat alespoň 1000 znaků.
+input: markdown
+prefill: |
+  # Vybraný web: _________.github.io
+  
+  Hodnocení:
+---
+# google analytics
+bloom: apply
+input: file
+comments: 10
+questions: |
+  Vyberte si metriku v účtu Google Analytics, která ukazuje u vašeho týmového projektu nenulové hodnoty v posledních dvou měsících. Vložte *screenshot* grafu a případně též části tabulek (dle vlastního zvážení) do přílohy a okomentujte, co jednotlivé hodnoty označují a znamenají. (Pokud neznamenají nic anebo nedovedete vůbec nic identifikovat, vyberte jinou metriku.)
+  
+  Pokud v týmu nemáte sdílený přístup do Google Analytics, nechte si [přístup nasdílet](https://www.google.cz/?client=safari#q=sd%C3%ADlet+př%C3%ADstup+google+analytics&gfe_rd=cr).

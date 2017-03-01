@@ -1,0 +1,164 @@
+name: "Web 2.0"
+summary: "Web 2.0 a uživateli generovaný obsah"
+goals: |
+  [Web 2.0](http://www.jstor.org/action/doBasicSearch?Query=web+2.0&acc=off&wc=on&fc=off&group=none) symbolizoval především zvýraznění role uživatelů ve tvorbě webového obsahu. V úvodu kurzu jsme narazili na základní myšlenky, které stojí za webem, mezi něž patří otevřenost a přístupnost: proto může takový *„obrat k uživatelům“* působit překvapivě. 
+  
+  **Vysvětlení je ale jednoduché.** Původními uživateli webu byli především technicky zběhlí profesionálové, kteří byli schopni pracovat s webovými technologiemi (HTML, CSS, později i Javascript) a web tak byl zdánlivě (ve své exkluzivitě) zcela demokratický. Během první vlny komercionalizace webového provozu (před tzv. prasknutím [dot-com bubliny][dotcom]) pak došlo k jasnému oddělení tvůrců obsahu (profesionálové) a jeho konzumentů („běžní“ uživatelé).
+  
+  [dotcom]: https://en.wikipedia.org/wiki/Dot-com_bubble 
+  
+  Web 2.0 tak díky nástrojům pro publikování a sdílení jako jsou **blogy, komentáře, wiki, diskusní fóra, sociální sítě, webové aplikace aj.** nabídl nové možnosti interakce uživatelům, kteří při práci s webem používali pouze webový prohlížeč. 
+  
+  Odborná reflexe těchto fenoménů probíhala nejvýrazněji v letech [2005–2008](https://www.google.com/trends/explore#q=web%202.0), kdy dochází k razantním změnám v chování uživatelů na internetu. Od té doby se situace dále proměňuje — sociální média se blíží pozici, kterou měly v období před Webem 2.0 tradiční média, zatímco uživatelé získávají přístup k pokročilým technologiím, které umožňují využít intenzivněji potenciál hypertextu a webu (verzovací systémy, specializované editory, kolaborativní nástroje atp.). Od [roku 2008](https://www.google.com/trends/explore#q=mobile%20first) se pak prosazuje [mobilní web](https://developers.google.com/webmasters/mobile-sites/) a mobilní aplikace, které přinášejí zcela [nové využití webu](http://mark-kirby.co.uk/2011/the-mobile-context/) a [vzorce chování](https://www.smashingmagazine.com/2015/10/takeaways-mobile-web-behavior/) jeho uživatelů.
+reading: | 
+  Tato lekce je po obecnějším úvodu (kontext najdete v odkazovaných textech) zaměřena především na práci s vlastními zdroji: v úkolech uvádějte použité zdroje a zdůvodněte, proč jste si je vybrali.
+time: 2h
+rubrics:
+  -
+    metric: "Je vybraná charakteristika Web 2.0 popsána správně?"
+    0: "Úkol není vypracovaný anebo je zcela nesrozumitelný."
+    1: "Charakteristika je zpracována správně, ale nejsou korektně uvedeny použité zdroje."
+    2: "Charakteristika je správná."
+    3: "Charakteristika je správná a příklady jsou její vhodnou ilustrací."
+  -
+    metric: "Je popis služby v úkolu č. 2 proveden správně?"
+    0: "Úkol není vypracovaný anebo je zcela nesrozumitelný."
+    1: "Popis služby není dostatečně konkrétní pro rozhodnutí, zda je daná služba pro vás potenciálně zajímavá."
+    2: "Popis je neúplný, ale neschází v něm žádné zásadní informace."
+    3: "Popis je jasný a úplný. Při dohledání dalších zdrojů je zřejmé, že ve zpracovaném úkolu nechybí žádné zásadní skutečnosti."
+  -
+    metric: "Je úkol č. 3, který se týká *algoritmicky tvořeného feedu* zpracován správně?"
+    0: "Úkol není vypracovaný anebo je zcela nesrozumitelný."
+    1: "V úkolu je korektně užíván termín „feed“."
+    2: "Úkol je zpracovaný dle zadání."
+    3: "Úkol je zpracovaný dle zadání a autor(ka) klade rozšiřující otázky, v nichž se zamýšlí nad vlivem popisovaných jevů."
+  - 
+    metric: "Je úkol týkající se MOOC zpracován správně?"
+    0: "Úkol není vypracovaný anebo je zcela nesrozumitelný."
+    1: "Charakteristika *MOOC* je částečně chybná."
+    2: "Kurz je dohledaný, ale hodnocení atraktivity *MOOC* je provedeno ledabyle."
+    3: "Hodnocení je provedeno důkladně a jasně ukazuje, proč autor(ka) příspěvku chce či nechce využít vzdělávání pomocí *MOOC*."
+  -
+    metric: "Je úkol týkající se *wiki* zpracován správně?"
+    0: "Úkol není vypracovaný anebo je zcela nesrozumitelný."
+    1: "V úkolu je korektně užíván termín „wiki“ (není zaměňován za název „Wikipedia“ a podobně)."
+    2: "Charakteristika *wiki* je korektní a kompletní."
+    3: "Zpracovaný úkol vyčerpávajícím způsobem a správně odpovídá na položenou otázku."
+  -
+    metric: "Jsou články v závěrečném úkolu vytvořeny správně?"
+    0: "Úkol není vypracovaný nebo není splněna více než jedna podmínka uvedená v zadání."
+    1: "Články nejsou formálně dotažené, ale tematicky odpovídají zaměření webu."
+    2: "Články nejsou obsahově výborné, ale formálně jsou dotažené."
+    3: "Články jsou čtivé a zajímavé, potenciálně zajímavé pro cílovou skupinu a splňují všechny formální požadavky."
+preface: 
+---
+# web2.0
+bloom: understand
+time: 30
+params:
+  characteristic:
+    - "*folksonomie* (Folksonomy)"
+    - "*Rich User Experience* (termín běžně se nepřekládá do češtiny)"
+    - "*účast uživatele na tvorbě obsahu* (User Participation)"
+    - "*Software as a service* (SaaS)"
+    - "*masová participace uživatelů*"
+questions: |
+  Popište, jaký význam má %characteristic% coby charakteristika Webu 2.0. 
+  
+  Na základě samostatně dohledaných zdrojů vysvětelete, **proč jde o podstatnou charakteristiku Webu 2.0**, a uveďte **konkrétní příklady, kde se projevuje**.
+  
+  Minimální délka odpovědi je 500 znaků (odkazy na zdroje se do rozsahu nezapočítají).
+---
+# sociální sítě
+bloom: understand
+time: 30
+params:
+  network:
+    - "Google+"
+    - "Facebook"
+    - "Twitter"
+    - "Qzone"
+    - "Sina Weibo"
+    - "Instagram"
+    - "Habbo"
+    - "VK"
+    - "Tumblr"
+    - "LinkedIn"
+    - "Renren"
+    - "Bebo"
+    - "Tagged"
+    - "Orkut"
+    - "Netlog"
+    - "Friendster"
+    - "hi5"
+    - "Flixster"
+    - "MyLife"
+    - "Classmates.com"
+    - "Sonico.com"
+    - "Plaxo"
+    - "douban"
+    - "Odnoklassniki"
+    - "Viadeo"
+    - "Flickr"
+    - "WeeWorld"
+    - "Last.fm"
+questions: |
+  Popište službu *%network%* (v minimálním rozsahu 600 znaků).
+  
+  > **Poznámka:** Jde o jednu ze 30 největších služeb dle počtu uživatelů, které obsahují či obsahovaly prvky sociálních sítí.
+---
+# algoritmický výběr, mediální praxe
+bloom: evaluate
+time: 1h
+questions:
+  - "Popište, co je to algoritmická tvorba feedu v kontextu sociálních sítí jako je Facebook či Twitter."
+  - "Popište, jakým způsobem vybírá sociální síť Facebook obsah, který se zobrazuje uživatelům ve *feedu*."
+  - "Popište, jaký dopad může mít algoritmická tvorba *feedu* na sociálních sítích pro jednotlivé uživatele."
+  - "Uveďte alespoň pět faktorů, které mohou být významné při algoritmické tvorbě *feedu* v kontextu sociálních sítí."
+  - "Vyhledejte informace o výzkumu, který se zabýval vlivem příspěvků ve feedu Facebooku na emoce uživatelů a provedl jej tým Facebooku v roce 2013, a stručně popište jeho výsledky."
+  - "Vyhledejte informace o výzkumu, který se zabýval vlivem příspěvků ve feedu Facebooku na emoce uživatelů a provedl jej tým Facebooku v roce 2013, a stručně popište jeho metodologii."
+  - "Vyhledejte informace o výzkumu, který se zabýval vlivem příspěvků ve feedu Facebooku na emoce uživatelů a provedl jej tým Facebooku v roce 2013, a zamyslete se nad etickou rovinou daného výzkumu a jeho praktickou využitelností."
+---
+# vzdělávání na internetu: mooc
+bloom: evaluate
+time: 30
+questions: |
+  Popište, co je to *MOOC*. 
+  
+  Následně dohledejte kurz na libovolné MOOC platformě, který je pro vás tematicky zajímavý. Zhodnoťte, zda je pro vás tato forma vzdělávání atraktivní (uveďte alespoň pět argumentů pro nebo proti).
+---
+# wiki - nástroje, principy, syntax
+bloom: understand
+time: 45
+questions:
+  - "Seznamte se s myšlenkou *wiki* a popište základní principy *wiki*."
+  - "Seznamte se s myšlenkou *wiki* a krátce ji charakterizujte. Popište alespoň tři nástroje (aplikace, služby atp.), které je možné využít při tvorbě *wiki*."
+  - "Seznamte se s myšlenkou *wiki* a krátce ji charakterizujte. Popište, jak pracuje odkazování mezi stránkami *wiki* v nástroji [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)."
+  - "Seznamte se s myšlenkou *wiki* a krátce ji charakterizujte. Pak se zaměřte na Wikipedii a popište, jak postupují *wikipedisté* pokud vznikne spor o správné znění hesla."
+---
+# projektový úkol: 2 články s obrázkem za každého člena týmu
+# commit vždy alespoň se dvěma soubory a s popisem
+bloom: apply
+time: 1h
+questions: |
+  Dotáhněte obsah svého týmového projektu. Každý člen týmu doplní dva příspěvky, které tematicky odpovídají zaměření webu. Je výhodné, když se domluvíte a rozdělíte si práci, aby vedla ke sdíleným cílům. Pokud však narazíte na problém, můžete pracovat samostatně.
+  
+  > **Tip:** Pokud v projektu existují příspěvky, které jsou vloženy „pro efekt“ a pro čtenáře, kterého zajímá dané téma, nejsou samy o sobě zajímavé, přepracujte tyto příspěvky tak, aby splňovaly níže vyjmenované podmínky. Nicméně v tomto případně se rozhodně dohodněte v týmu, ať nepracujete na stejném příspěvku dvojmo.
+  
+  Doplňte dva příspěvky (články, stránky atp.), které oba splňují následující podmínky:
+  
+  - zapadají do profilu vašeho webu a jsou zajímavé pro cílového čtenáře,
+  - korektně využívají souborů v markdownu a šablon,
+  - obsahují vždy alespoň jeden obrázek (ten nahrajte do složky `/images` a korektně vložte do textu pomocí syntaxe markdown)
+  - obsahují vždy alespoň dva hypertextové odkazy na relevantní zdroje
+  - minimální rozsah každého článku je 500 znaků, je nutné korektně využívat prvků v syntaxi markdown
+  
+  **Zásadní podmínkou je příspěvky commitnout vždy jako celek** (tedy alespoň jeden soubor s koncovkou `md` a obrázek v každém commitu) **a vhodně commity popsat**. 
+  
+  Pokud jste vlastníkem repozitáře, vložte do vstupního pole odkazy na commity, pokud do něj přispíváte z forku, vložte odkazy na pull request(y).
+prefill: |
+  commit/pull request č. 1:
+  commit/pull request č. 2:
+  odkaz na web:
+  
+  případné komentáře:  
