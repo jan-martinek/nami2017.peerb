@@ -1,0 +1,269 @@
+name: Publikování na webu
+summary: "Jak publikovat obsah na webu? Výhody služeb, CMS a generovaných webů. Úvod do kaskádových stylů."
+goals: |
+  **Cílem této lekce je porozumět dostupným způsobům publikování informací na webu a naučit se základy CSS.**  
+reading: |
+  > **Poznámka:** Pozor na záludost: v angličtině snadno odlišitelné *web* a *website* se do češtiny překládá často stejně (*web*). Jen občas se používají přesnější, ale buď zavádějící nebo nezvyklé pojmy jako *webové stránky* nebo *webové sídlo*. Při čtení tak musíte dávat pozor, zda je zmiňován *web* nebo *web* (sic).
+preface:
+rubrics:
+  - Slovně zhodnoťte případné nedostatky tohoto úkolu.
+---
+bloom: understand
+input: markdown
+params:
+  article:
+    - "[Carson Ward: 6 Reasons to Avoid Building Your Own CMS](http://www.opendesigns.org/6-reasons-to-avoid-building-your-own-cms/)"
+    - "[Jacob O'Gara: Wordpress Vs. Tumblr Vs. Blogger](http://www.digitaltrends.com/social-media/wordpress-vs-tumblr-vs-blogger/)"
+    - "[Vito Botta: Why I switched from Jekyll back to WordPress](http://vitobotta.com/switched-jekyll-back-wordpress/)"
+    - "[David Turnbull: WordPress vs. Jekyll: Why You Might Want to Switch](http://www.sitepoint.com/wordpress-vs-jekyll-might-want-make-switch/)"
+    - "[Andy Leverenz: WordPress vs Tumblr: Comparing Two Of The Most Popular Blogging Platforms](https://www.elegantthemes.com/blog/editorial/wordpress-vs-tumblr)"
+    - "[Marko Saric: Tumblr Vs WordPress Comparison: A Powerful Combination](http://howtomakemyblog.com/tumblr-vs-wordpress/)"
+    - "[Quora: Thinking SEO, is WordPress or Tumblr better for a business persona blog?](https://www.quora.com/Thinking-SEO-is-WordPress-or-Tumblr-better-for-a-business-persona-blog) (přečtěte si všechny odpovědi s alespoň jedním bodem)"
+    - "[Adrianne Jeffries: Posterous is shutting down: here are the best alternatives](http://www.theverge.com/2013/4/30/4281780/posterous-is-shutting-down-tomorrow-here-are-the-best-alternatives)"
+    - "[Mathias Biilmann Christensen: Why Static Website Generators Are The Next Big Thing](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)"   
+    - "[Sick Of Yahoo? Move Your Tumblr Blog Into WordPress](http://www.makeuseof.com/tag/how-to-move-your-blog-from-tumblr-into-wordpress/)"
+questions: |
+  ### Platformy pro publikování na webu
+  
+  **Podíváme se na tři způsoby, jak pracovat s vlastním obsahem**, který chcete zveřejnit na internetu. Využít k tomu můžete:
+  
+  - **webové služby třetích stran** jako jsou [medium.com](http://medium.com), [tumblr.com](http://tumblr.com), sociální sítě aj.
+  - **systémy pro správu obsahu** (Content Management System, CMS), které spustíte na vlastním či pronajatém serveru s dostupným skriptováním a databází: např [Wordpress](http://wordpress.org) či [Ghost](https://ghost.org),
+  - **generátory statických webových stránek**, které z podkladů vygenerují HTML (a další) soubory, které zpřístupníte na vlastním serveru, jako je např. [Jekyll](http://jekyllrb.com), [Gitbook](https://www.gitbook.com) nebo [Octopress](http://octopress.org/).
+  
+  > **Poznámka:** Dejte si pozor na zásadní rozdíl mezi *Wordpress(.org)*, což je CMS s otevřeným zdrojovým kódem, a *Wordpress.com*, což je webová služba.)
+  
+  Každý ze způsobů publikování je jen zjednodušením práce, kterou byste mohli provést sami pomocí HTML, CSS a Javascriptu. Zjednodušují spolupráci, redukují množství potřebných znalostí a standardizují práci s obsahem i samotný obsah. To zároveň znamená, že jsou samy o sobě omezením: pomocí HTML, CSS a Javascriptu můžete zpracovat nejrůznější dokumenty a aplikace, zatímco dané platformy nastavují velmi konkrétní procesy a obsahové formáty, které pak musíte dodržovat a naplňovat.
+  
+  Přečtěte si text *%article%* a shrňte jej. Správně **zařaďte** zmiňované publikační nástroje do výše zmíněné trojice (služby, CMS a generátory statických stránek), **popište rozdíly** a **důvody**, proč jsou dané rozdíly v určitém kontextu podstatné. Při zpracování so pomozte dalšími zdroji, mimo článků zadaných v rámci tohoto úkolu.
+  
+  V kontextu vašeho studia či (očekávané) pracovní pozice: dovedete si představit využití některého z popisovaných nástrojů? Proč byste se rozhodl/a pro konkrétní řešení?
+  
+  Kdybyste chtěli získat širší kontext, zde je seznam dalších článků na stejné téma. (Jde o seznam všech článků, které je možné dostat v zadání tohoto úkolu.)
+  
+  - [Carson Ward: 6 Reasons to Avoid Building Your Own CMS](http://www.opendesigns.org/6-reasons-to-avoid-building-your-own-cms/)
+  - [Jacob O'Gara: Wordpress Vs. Tumblr Vs. Blogger](http://www.digitaltrends.com/social-media/wordpress-vs-tumblr-vs-blogger/)
+  - [Vito Botta: Why I switched from Jekyll back to WordPress](http://vitobotta.com/switched-jekyll-back-wordpress/)
+  - [David Turnbull: WordPress vs. Jekyll: Why You Might Want to Switch](http://www.sitepoint.com/wordpress-vs-jekyll-might-want-make-switch/)
+  - [Andy Leverenz: WordPress vs Tumblr: Comparing Two Of The Most Popular Blogging Platforms](https://www.elegantthemes.com/blog/editorial/wordpress-vs-tumblr)
+  - [Marko Saric: Tumblr Vs WordPress Comparison: A Powerful Combination](http://howtomakemyblog.com/tumblr-vs-wordpress/)
+  - [Quora: Thinking SEO, is WordPress or Tumblr better for a business persona blog?](https://www.quora.com/Thinking-SEO-is-WordPress-or-Tumblr-better-for-a-business-persona-blog)
+  - [Adrianne Jeffries: Posterous is shutting down: here are the best alternatives](http://www.theverge.com/2013/4/30/4281780/posterous-is-shutting-down-tomorrow-here-are-the-best-alternatives)  
+  - [Sick Of Yahoo? Move Your Tumblr Blog Into WordPress](http://www.makeuseof.com/tag/how-to-move-your-blog-from-tumblr-into-wordpress/)
+  
+  (Očekávaná délka odpovědi na tento úkol je 1000 znaků.)
+rubrics:
+  - checklist: ""
+    items: 
+      - Odpověď má požadovaný rozsah.
+      - Shrnutí je srozumitelné.
+      - Text korektně pracuje s kategoriemi *webových služeb*, *CMS* a *generátorů statických stránek*.
+      - Vysvětlení pracuje s dalšími dohledanými zdroji, které jsou v úkolu zmíněny.
+  - "Pokud jste měl/a zadaný jiný text, *pečlivě* srovnejte závěry autora úkolu a vaše závěry (alespoň 300 znaků)."
+---
+bloom: apply
+input: livecss
+questions: |
+  ### První kroky s kaskádovými styly
+  
+  **Druhou a časově náročnější součástí je práce s CSS**, neboli kaskádovými styly (Cascading Style Sheets). Jde o způsob, jak sémantickému HTML dát vizuální podobu. Vracíme se zde k základům, ale namísto **obsahu** se teď budeme zabývat **formou**. HTML a CSS tvoří (společně s Javascriptem) to, co vidíte na jakékoli webové stránce – se znalostí obojího již můžete vytvořit velmi pokročilý webový obsah.
+  
+  **K čemu je to dobré?** Je to podobné, jako byste uměli pracovat v roce 1990 s textovým editorem a tabulkovým procesorem: umožní vám to jednak lepší porozumění fungování a potenciálu webu, a též vám to dá základní praktické dovednosti – ty můžete využít profesionálně, ale i pro vlastní potřebu.
+  
+  **CSS popisuje, jak mají vypadat jednotlivé prvky v dokumentu**: odstavce vypadají takto, nadpisy zase jinak, atp. Prohlédněte si kód v jednotlivých editorech — vlevo vidíte již známé HTML, následuje CSS a vpravo vidíte výstup. CSS má jednoduchou strukturu `selektor { vlastnost: hodnota; vlastnost2: hodnota; … }`. Selektor (`p`, `h1`) *vybírá* prvky, na něž chcete aplikovat pravidlo a pravidlo se skládá z deklarací, které popisují různé vlastnosti (např. barvu textu, typ písma anebo šířku obrázku).
+  
+  Zkuste kód v obou editorech upravit a sledujte, jak se mění výstup. Dosáhněte toho, aby byl vzhled obsahu v pravém sloupci výrazně odlišný od toho, který jste zde našli. Vyzkoušejte si různé vlastnosti CSS, které jsou popsané v kódu.
+prefill: |
+  <h3>Úkol 2</h3>
+
+  <p>Po průchodu některým z kurzů CSS ostylujte dokument, který vidíte ve vstupním poli níže. Dokument a v něm obsažený text nejprve pečlivě prozkoumeje. Využijte svých znalostí HTML, typografie, popkultury a nově nabytých znalostí CSS k tomu, aby výsledný dokument byl přitažlivý a čitelný pro cílovou skupinu dětí ve věku 3-5 let. Krom vizuálního stylu, dbejte na vhodnout velikost písma a typografická pravidla.</p>
+
+  <p>Využijte při tom alespoň tyto CSS vlastnosti: <code>color</code>, <code>text-align</code>, <code>justify</code>, <code>text-decoration</code>, <code>text-transformation</code>, <code>line-height</code>, <code>font-family</code>, <code>font-size</code>, <code>font-style</code>, <code>font-weight</code>, <code>background</code>, <code>margin</code>, <code>padding</code>, <code>border</code>, <code>float</code>. Vytvořte alespoň 10 CSS deklarací, z nichž alespoň dvě využijí <strong>složených selektorů</strong>.</p>
+
+  <h4>Podrobnosti</h4>
+
+  <ul>
+    <li>Při práci pracujte pouze s kódem uvnitř elementu <code>style</code>.</li>  
+    <li>Výsledný kód umístěte do souboru, který commitněte do svého repozitáře na Githubu. Do vstupního pole pod zdrojovým kódem uveďte adresu commitu.</li>
+  </ul>
+
+  <blockquote>
+    <strong>Tip:</strong> Při práci si dokument uložte na svůj počítač a pracujte s textovým editorem Brackets a podobným. V prohlížeči sledujte náhled (editor Brackets umožňuje <a href="https://www.youtube.com/watch?v=Nhvj1NYC3Uc" target="_blank">automatickou aktualizaci náhledu</a>). Pro rychlejší práci s jiným editorem využijte vývojářských nástrojů (jsou popsány v <a href="https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/using-the-browser-developer-tools" target="_blank">jedné z lekcí v kurzu Khan Academy</a>).
+  </blockquote>
+  
+  ###css###
+  
+  .css-preview-wrapper {
+    padding: 10px;
+    border: solid;
+    background: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/gplaypattern.png');
+  }
+
+  p { 
+    color: #f60; 
+    font-weight: bold; 
+  }
+rubrics:
+  - checklist: ""
+    items: 
+      - Uložený výsledek je vizuálně výrazně odlišný od původně zadaného kódu.
+---
+bloom: understand
+questions: |
+  ### Kurz CSS
+  
+  CSS má velmi jednoduchou syntaxi, ale je potřebné se naučit slovíčka — to můžete snadno zvládnout pomocí internetového kurzu. Můžete si vybrat ze dvou variant. 
+  
+  Můžete absolvovat část kurzu na [Codecademy](https://www.codecademy.com/) nebo na [Khan Academy](https://www.khanacademy.org/). Pokud to stihnete, klidně si projděte kurzy oba. (Lekce počítá s tím, že již znáte základy HTML z kurzu *Transformace dat pomocí počítače* &ndash; pokud tomu tak není, počítejte s tím, že vám bude průchod lekcí trvat o něco déle.)
+  
+  - [HTML & CSS @ Codecademy](https://www.codecademy.com/learn/web) – zde pracujete přímo s kódem a učíte se pomocí textové nápovědy po malých krůčcích (zpracujte lekce dostupné zdarma)
+  - [Khan Academy](https://www.khanacademy.org/computing/computer-programming/html-css/) – zde se učíte pomocí interaktivních tutoriálů, kterými vás provází hlas lektora či lektorky (měly by vám stačit lekce *Intro to CSS*, *CSS text properties*, *CSS layout* a *Using multiple CSS classes*)
+
+  > **Pozn.:** Pokud budete potřebovat, neváhejte si dohledat další informace. Nicméně stejně jako v podzimním kurzu nedoporučuji používat zdroj [jakpsatweb.cz](http://jakpsatweb.cz), který bohužel místy obsahuje zastaralé a matoucí informace z doby, kdy bylo CSS ještě poměrně nové.
+  
+  Do vstupního pole popište, který kurz jste si vybrali a jak to šlo: co pro vás bylo snadné, co bylo obtížné a zda je něco, s čím byste potřebovali poradit. (To bude sloužit jako zpětná vazba pro vyučujícího.)
+rubrics:
+  - checklist: ""
+    items: 
+      - Odpověď obsahuje informaci o vybraném kurzu.
+      - Autor/ka popisuje, co bylo snadné.
+      - Autor/ka popisuje, co bylo obtížné.
+---
+bloom: create
+params:
+  target:
+    - "dětí ve věku 3-5 let"
+    - "dětí ve věku 8-10 let"
+    - "teenagerů ve věku 12-15 let"
+    - "rodičů ve věku 30-40 let"
+    - "prarodičů ve věku 50-70 let"
+questions: |
+  Po průchodu některým z kurzů CSS ostylujte dokument, který vidíte ve vstupním poli níže. Dokument a v něm obsažený text nejprve pečlivě prozkoumeje. Využijte svých znalostí HTML, typografie, popkultury a nově nabytých znalostí CSS k tomu, aby výsledný dokument byl přitažlivý a čitelný pro cílovou skupinu %target%. Krom vizuálního stylu dbejte na vhodnout velikost písma a typografická pravidla.
+  
+  > **Tip:** Doporučuji využít možnost pracovat s obrázky dostupnými na internetu, které můžete vkládat coby pozadí prvků.
+  
+  Využijte při tom alespoň tyto CSS vlastnosti: `color`, `text-align`, `justify`, `text-decoration`, `text-transformation`, `line-height`, `font-family`, `font-size`, `font-style`, `font-weight`, `background`, `margin`, `padding`, `border`, `float`. Vytvořte alespoň 10 CSS deklarací, z nichž alespoň dvě využijí **složených selektorů**. Při práci pracujte pouze s kódem uvnitř elementu `style`. 
+  
+  Výsledný kód pak umístěte do souboru a [stylopis uložte samostatně](http://matthewjamestaylor.com/blog/adding-css-to-html-with-link-embed-inline-and-import) do souboru `style.css`. HTML a CSS soubor následně commitněte **najednou** do svého repozitáře na Githubu, který jste vytvořili v předchozí lekci. Do vstupního pole pod zdrojovým kódem uveďte adresu commitu.
+  
+  > **Pozn.:** Při práci si dokument uložte na svůj počítač a pracujte s textovým editorem Sublime Text či podobným. V prohlížeči sledujte výsledek (do editoru si můžete stáhnout balíček, který umožní [automatickou aktualizaci náhledu](https://packagecontrol.io/packages/LiveReload)). Pro rychlejší práci využijte vývojářských nástrojů (jsou popsány v [jedné z lekcí v kurzu Khan Academy](https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/using-the-browser-developer-tools)), které krom HTML a Javascriptu umožňují nahlédnout i do stylopisu. 
+input: html
+comments: 5
+prefill: |
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>O chytrém ševci a hloupém čertovi</title>
+    <meta charset="utf-8">
+    <style>
+      /* 
+        CSS deklarace doplňte zde 
+      */
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <p class="zanr">Pohádka</p>
+      
+        <h1>O chytrém ševci a hloupém čertovi</h1>
+      
+        <p class="autor">autor původního textu: <span class="name">Miloš Novotný</span></p>
+        
+        <p class="zdroj">adaptováno z textu dostupného na <a href="http://dum.rvp.cz/materialy/pohadka-o-chytrem-sevci-a-hloupem-certovi.html">RVP.cz</a></p>
+      </header>
+      
+      <section id="uvod">
+        <p>Jeden švec měl moc dětí a málo peněz. Takže měl i velkou bídu. Jednou z toho byl tak nešťastný, že zavolal čerta, aby mu pomohl. A čert tu byl raz dva.</p>
+
+        <p><i>„Co si žádáš? Všechno ti splním. <em>Stačí podepsat mi pekař tady papír, že mi dáváš svoji duši.</em>“</i></p>
+      </section>
+      
+      <section id="pytel">
+        <h2>Pytel peněz</h2>
+
+        <p>Švec tedy podepsal a chtěl pytel zlatých peněz, tak velký, jaký jen čert unese. Čert se vypravil do pekla a za chvíli byl i s obrovským pytlem zpátky. Pak popadl svůj papír a  s ševcovým podpisem a upaloval domů. Pyšně ho tam ukázal svému tatínkovi, hlavnímu čertovi, ale ten se na něj místo pochvaly rozkřiknul: <i>„Za jediného obyčejného ševce jsi dal tolik zlatých peněz?! Ty darebáku. Okamžitě jdi za ním, ať ti ty peníze vrátí a svůj podpis si nechá!“</i> S tím vyhnali nešťastného čerta z pekla. Nezbylo mu, než se vydat zpátky za ševcem.</p>
+
+        <p>Přišel k ševci a povídá: <i>„Je mi tě líto, že jsi svou duši odkázal peklu. A já bych zas docela rád dostal zpátky ten pytel zedník peněz,“</i></p>
+        
+        <aside>
+          <blockquote>
+            „Čerti to zkrátka nemají lehké.“
+          </blockquote>
+        </aside>
+
+        <p><i>„Víš co,“</i> zasmál se švec. <i>„Uděláme to takhle: Budeme spolu soutěžit. Když vyhraješ ty, dostaneš zpátky pytel peněz a můžeš si nechat i ten papír s mým podpisem. Ale když vyhraji já, vrátíš mi papír a pytel zlata si nechám.“</i></p>
+      </section>
+      
+      <section id="soutez">
+        <h2>Soutěžení</h2>
+
+        <p>Takový návrh se čertovi zalíbil. Znal různá čertovská kouzla a myslel si, že určitě vyhraje.</p>
+
+        <p><i>„A v čem budeme soutěžit?“</i></p>
+
+        <ol>
+          <li>
+            <p><i>„Nejdřív budeme zápasit. Ale já bych ti mohl ublížit, a tak se raději budeš potýkat s mým dědečkem. Podívej se, zrovna támhle spí v křoví. Jdi a vzbuď ho.“</i></p>
+
+            <p>Čert vlezl do křoví, kde spal zrovna velký huňatý medvěd. Zatahal medvěda za krejčí nohu, ten se vzbudil, a že byl z toho probuzení celý rozmrzelý, popadl čerta a praštil s ním o zem. Čert se polekal a utekl do pekla. Když ho ale uviděl hlavní čert a slyšel, co se stalo, hned poslal čerta zpátky. Nezbylo mu, než jít znovu za ševcem.</p>
+
+            <p><i>„Pojď, budeme spolu zase soutěžit. Tentokrát určitě vyhraju.“</i></p>
+          </li>
+          <li>
+            <p><i>„Jak myslíš,“</i> povídá švec. <i>„Budeš tedy závodit s mým synkem. Je docela malý a určitě ho předběhneš spíš, než mě. Podívej se, támhle zrovna sedí!“</i> A švec ukázal na zajíčka, krčícího se v brázdě.</p>
+
+            <p>Čert se rozběhl, ale ten na nic nečekal a upaloval tak rychle, že byl za kominík chvilku pryč. A tak čert znovu prohrál.</p>
+
+            <p><i>„Budeme soutěžit ještě jednou,“</i> navrhl ševci.</p>
+            
+            <p><i>„Proč by ne?“</i> souhlasil švec.</p>
+          </li>
+          <li>
+            <p><i>„Budeme házet kamenem. Kdo jej vyhodí výš, ten vyhraje.“</i></p>
+
+            <p><i>„Výborně,“</i> souhlasil horlivě čert, protože uměl znamenitě házet. A hned popadl velký kámen a hodil ho tak vysoko, že museli dlouho čekat,než spadl zpátky na zem.</p>
+
+            <p>Švec si mezitím schoval do dlaně malého ptáčka zpěváčka, kterého si choval doma v klícce. Když na něj přišla řada, vyhodil ptáčka do vzduchu, a ten letěl vysoko a daleko. Čekali dlouho, předlouho, ale kde nic, tu nic.</p>
+
+            <p>Čert uznal, že zase prohrál. Vrátil ševci papír s jeho podpisem a nechal mu i pytel zlata. Musel s nepořízenou domů. Že tam dostal zase vynadáno, to si domyslíte. Čerti to zkrátka nemají lehké.</p>
+          </li>
+        </ol>
+      </section>
+        
+      <section id="zaver">
+        <h2>Spravedlnost?</h2>
+        
+        <p>A chytrý švec s rodinou se radovali, jak převezli hloupého čerta.</p>
+      </section>
+
+      <footer>
+        <p>Konec</p>
+      </footer>
+
+    </div>
+  </body>
+  </html>
+rubrics:
+  - checklist: "Hodnocení úkolu. (Zkontrolujte, jak vypadá výsledný dokument při zobrazení v prohlížeči, nejen samotný zdrojový kód.)"
+    items: 
+      - V kódu HTML nedošlo k žádným změnám krom obsahu elementu `style`.
+      - Jsou využity všechny v zadání požadované vlastnosti CSS.
+      - Je vytvořeno alespoň 10 CSS deklarací, z nichž alespoň dvě využívají [složených selektorů](https://vaclavpekarek.gitbooks.io/html-a-css-krok-za-krokem/content/uvod/52_slozene_selektory.html).
+      - Z výsledku je znát cílení na konkrétní cílovou skupinu.
+      - V komentáři je uveden odkaz na commit v repozitáři autora/autorky.
+      - V repozitáři se nachází soubory zpracované dle zadání, přidané zároveň v jednom commitu.
+  - "Okomentujte, kde vnímáte ve stylu dokumentu, který je vytvořen ve druhém úkolu, cílení na konkrétní cílovou skupinu."
+---
+bloom: apply
+questions: |
+  V minulém úkolu vám možná kolegové zaslali do repozitáře pohádku (snad i několik): vytvořené pull requesty schvalte a do komentáře vložte informaci o počtu přijatých pohádek a odkazy na přijaté pull requesty.
+  
+  Pokud jste doposud žádný pull request nedostali, **vyžádejte si pohádku od někoho z kolegů v kurzu nyní** (dle zadání jako v předchozí lekci) a splňte zadání.
+  
+  > **Pozn.:** Tento kurz se věnuje spolupráci na internetu — proto v něm budou podobně „interaktivní“ úkoly častější.
+rubrics:
+  - checklist: ""
+    items: 
+      - V odpovědi je uveden odkaz na pull request.
+      - Pull request je směřován na stejný repozitář, jako byl použit v úkolu č. 3.
