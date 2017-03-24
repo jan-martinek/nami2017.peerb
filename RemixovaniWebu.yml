@@ -1,0 +1,224 @@
+name: "Remixování webu"
+summary: "Web je otevřený a v souladu s licencemi je možné skládat různé zdroje do jednoho celku."
+goals: |
+  **Cílem této lekce je osvojit si několik základních způsobů, jak skládat data dostupná na webu do celků.** Konkrétně se mrkneme, jak funguje vkládání pomocí `iframe` a skriptů a pak si vyzkoušíme z určitého webu vytáhnout data a transformovat je do podoby, která je pro nás zajímavá.
+reading: |
+  Přebírání dat dostupných na webu třetími stranami je významnou součástí fungování webu. Příkladem mohou být vyhledávače jako je [Google](http://google.com) či [Seznam](http://seznam.cz) nebo vkládání obsahu ze sociálních sítí a videoserverů.
+
+  Obsah je možné skládat do jednoho celku různými způsoby. Profesionální řešení, které musí spolehlivě fungovat (jako prodejní či informační služba), bude nejspíše pracovat přímo na serveru a bude využívat především strojově čitelných zdrojů dat. My si vyzkoušíme skládání zdrojů přímo ve webovém prohlížeči: pomocí prvku iframe, skriptů či specifických HTML prvků.
+preface: 
+rubrics:
+  - Slovně zhodnoťte případné nedostatky tohoto úkolu.
+---
+# embed
+bloom: understand
+time: 1h30
+questions: |
+  Přečtěte si článek [Hacking, Mashing, Gluing: Understanding Opportunistic Design](http://webremix.org/readings/hackingmashinggluing.pdf), který vysvětluje některé motivace za „lepením“ webů dohromady. Autoři používají technický slovník: některé kapitoly můžete přeskočit. Nejpřístupnější a snad i nejzajímavější jsou závěrečné kapitolky na posledních třech stranách — od mezititulku *„Mashing as a design activity“* (s. 52).
+
+  Na webu se běžně setkáte s předgenerovanými elementy `embed`, `iframe`, `script` nebo složitějším kódem (často kvůli tomu, aby lépe fungoval v různých prohlížečích). Obsah ke vkládání najdete například na [Twitteru](http://twitter.com) (tweety), [Youtube](http://youtube.com) (videa), [Facebook](http://facebook.com) (statusy, odznaky, like tlačítka aj.), [Disqus](http://disqus.com) (modul pro vkládání komentářů ke článkům), [Flickr](http://.com) (fotky, fotoalba), [Soundcloud](http://soundcloud.com) a [Spotify](http://spotify.com) (playlisty, skladby), [Google Calendar](http://calendar.google.com) (kalendáře), [Slideshare](http://slideshare.com) (prezentační slajdy) a další. 
+  
+  > **Tip:** Rozdíl mezi `embed` a `iframe` je poměrně hezky popsaný na [Stack Overflow](http://stackoverflow.com/questions/16660559/difference-between-iframe-embed-and-object-elements/21115112#21115112).  
+  >
+  > S iframe se dnes potkáte spíše méně často (kvůli zásadním problémům s vyhledávači a díky rozšíření skriptování na straně serveru). Prvek se využívá při přidávání funkcionality z externího zdroje (například [lajkovací tlačítka Facebooku](https://developers.facebook.com/docs/plugins/like-button), diskusní pluginy jako je [Disqus](https://disqus.com) apod.).
+  
+  ### Úkol
+  
+  1. Najděte tři další služby, které podporují vkládání jejich obsahu do webu a přiložte konkrétní kód. (Pokud budete hledat v angličtině, klíčová slova jsou „embed“, „embeddable“ apod.). 
+  2. Zkontrolujte, zda kódy fungují — uložte si HTML kód jako soubor, který následně otevřete v prohlížeči. (Pokud něco nefunguje, načtěte si soubor pomocí Civetwebu — kvůli nuancím uvnitř vkládaných kódů často záleží na protokolu, kterým je prvotní obsah stahován.)
+  3. Jednotlivé kusy kódu popište (ať už pomocí klasických odstavců anebo pomocí [HTML komentářů](https://www.w3schools.com/tags/tag_comment.asp)).
+input: html
+prefill: |
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Zpracovaný úkol</title>
+  </head>
+  <body>
+    <!-- zde vložte obsah -->
+  </body>
+  </html>
+rubrics:
+  - checklist: ""
+    items: 
+      - Kódy jsou vloženy.
+      - Vložený obsah se při uložení HTML kódu souboru a načtení souboru přes Civetweb zobrazuje.
+      - Kódy jsou okomentovány.
+---
+# embed/iframe apply
+bloom: apply
+time: 30
+questions: |
+  Najděte relevantní obsah, který byste mohli vložit pomocí výše používaných funkcí na svůj web vytvořený pomocí Jekyllu. 
+  
+  > Pokud ještě nemáte nainstalovaný Jekyll, dokončete předchozí lekci. Pokud to již není možné, nainstalujte si jej dle následujícího návodu:
+  > 
+  > 1. Stáhněte si [LearnJekyll.js](https://github.com/jan-martinek/learn-jekyll/releases/) a rozbalte ho do své složky, kde máte i jiné věci související s předmětem (a na niž je nasměrovaný server CivetWeb). Výsledná složka by se měla jmenovat `learn-jekyll`. (Dejte pozor na to, abyste archiv skutečně rozbalili.)
+  >
+  > 2. Pokud jej nemáte spuštěný, spusťte server CivetWeb.
+  > 
+  > 3. Zkontrolujte, zda funguje adresa složená z domény, kterou máte nastavenou v Civetwebu (např. `http://localhost:8080`) a cesty `/learn-jekyll/mock/`. Nejspíše to tedy bude adresa [http://localhost:8080/learn-jekyll/mock/](http://localhost:8080/learn-jekyll/mock/). Měla by se zobrazit stránka podobná té, kterou vidíte [zde na Github Pages](https://jan-martinek.github.io/learn-jekyll/).
+  > 
+  > 4. Pokud něco nefunguje, vyřešte problémy. Následně v souboru `learn-jekyll/_config.yml` změňte název webu (jde o parametr `title` — k úpravě použijte Sublime Text): vložte do něj název tématu, které vás zajímá. (Pokud název obsahuje dvojtečku nebo jiný důležitý znak, musíte řetězec obalit uvozovkami, viz zápis u hodnoty `baseurl`.)
+  
+  Vytvořte nový blogpost ve složce `_posts` a do něj vložte embedovaný obsah a komentář, proč jste jej vybrali.
+  
+  Odkažte na commit, v němž daný blogpost umístíte na Github, a na Githubem vygenerovanou stránku (na webu `<jmeno>.github.io`).
+input: html
+rubrics:
+  - checklist: ""
+    items: 
+      - V odpovědi je odkaz na správný commit.
+      - V odpovědi je funkční odkaz na stránku vygenerovanou pomocí Github Pages.
+      - Vložený obsah je funkční a zobrazuje se na odkazované stránce.
+      - Příspěvek na blogu je tematicky správně zvolený.
+---
+# xpath
+bloom: remember
+time: 1h
+params:
+  set:
+    - nadpisy druhé úrovně
+    - texty odkazů uvnitř odstavců
+    - webové adresy v odkazech
+    - odkazy v navigaci (uvnitř elementu `nav`)
+    - použité hodnoty atributu `class`
+    - použité hodnoty atributu `id`
+    - vytučněné texty pomocí značky `<strong>`
+questions: |
+  **Jazyk XPath** je způsob, jak popsat, jaké elementy v XML/HTML dokumentu chceme najít. Příkladem může být, nalezení všech odkazů, nadpisů nebo tučně zvýrazněných slov na konkrétní webové stránce. Je to podobné jako vybírání záznamů z databáze, ale místo řádků hledáme prvky ve stránce. Též je to podobné selektorům v CSS. Například pro výběr všech popisků obrázků (atributů `alt`) bychom mohli použít zápis `\\img\@alt`.
+  
+  `ImportXML` je funkce v Google Spreadsheets, která umožňuje vytáhnout z libovolné webové stránky pomocí XPath konkrétní data (některé weby fungují hůře — např. stahování výsledků vlastního vyhledávání se Google brání). 
+  
+  Jde o konkrétní techniku *scrapování*, tzn. sběru dat z webu. Taková data pak můžete snadno prozkoumat, analyzovat a dělat z nich různé závěry. (Například můžete vytáhnout všechny titulky ze zpravodajských webů a analyzovat, jakým tématům se tato média věnují.)
+  
+  Přečtěte si velmi [krátký tutoriál](http://mrselenium.blogspot.cz/2011/01/quick-xpath-for-dummies.html) a prvních pět kapitol návodu [The ImportXML Guide for Google Docs](https://www.distilled.net/blog/distilled/guide-to-google-docs-importxml/). Pokud vám něco nebude jasné, dohledejte si výukové video na Youtube, je jich [mnoho](https://www.youtube.com/watch?v=EXhmF9rjqP4).
+  
+  ### Zadání
+  
+  Napište výraz XPath, pomocí které můžete dohledat všechny %set% ve stránce.
+input: html
+prefill: "\\\\"
+rubrics:
+  - checklist: ""
+    items: 
+      - Funkce `ImportXML` je správně použita.
+      - Požadovaný vyraz je správně sestavený.
+---
+# xpath
+bloom: apply
+time: 1h
+input: code
+params:
+  type:
+    - tuzemský seriózní
+    - tuzemský bulvární
+    - tuzemský oborový (z libovolného oboru)
+    - zahraniční
+    - zahraniční oborový (z libovolného oboru)
+questions: |
+  Vyberte si libovolný %type% zpravodajský server a pomocí `ImportXML` vytáhněte do Google Spreadsheetu titulky, které jsou zobrazeny na homepage. (V prohlížeči zjistěte, v jakém elementu jsou titulky běžně zobrazeny. Pokud je na homepage více různých elementů s titulky, vyberte si ten nejčastější.)
+  
+  Prohlédněte si výsledky a vytvořte v nějaké buňce bokem (případně na jiném listu) počítadlo, které počítá titulky, která obsahují slovo, které se v titulcích opakuje (u bulvárního média to může být jméno celebrity, u seriózního média se může objevovat častěji některá aktuální kauza). K počítání můžete použít funkci [`COUNTIF`](https://support.google.com/docs/answer/3093480?hl=en).
+  
+  Vytvořený spreadsheet nasdílejte ke čtení a odkažte ve vstupním poli. Doplňte název zvoleného zpravodajského serveru.
+rubrics:
+  - checklist: ""
+    items: 
+      - Odpověď obsahuje funkční odkaz na spreadsheet.
+      - Titulky z homepage jsou správně načteny.
+      - Počítadlo korektně počítá titulky, v nichž se vyskytuje zvolené slovo.
+---
+# css fixes
+bloom: apply
+time: 2h
+params:
+  user:
+    - "[JanVokral](https://github.com/JanVokral/)"
+    - "[yana3](https://github.com/yana3/)"
+    - "[UsernameIsAlreadyTaken16](https://github.com/UsernameIsAlreadyTaken16/)"
+    - "[danielalunackova](https://github.com/danielalunackova/)"
+    - "[majkelss](https://github.com/majkelss/)"
+    - "[dogeathot](https://github.com/dogeathot/)"
+    - "[KT166](https://github.com/KT166/)"
+    - "[verlol](https://github.com/verlol/)"
+    - "[Veveruska](https://github.com/Veveruska/)"
+    - "[vikina](https://github.com/vikina/)"
+    - "[psvoboda94](https://github.com/psvoboda94/)"
+    - "[JannineSt](https://github.com/JannineSt/)"
+    - "[Krapina](https://github.com/Krapina/)"
+    - "[veromiknika](https://github.com/veromiknika/)"
+    - "[394724](https://github.com/394724/)"
+    - "[Bonuly](https://github.com/Bonuly/)"
+    - "[HonryZeNocturnal](https://github.com/HonryZeNocturnal/)"
+    - "[trafo2017](https://github.com/trafo2017/)"
+    - "[TerezaP](https://github.com/TerezaP/)"
+    - "[LazyAndSlow](https://github.com/LazyAndSlow/)"
+    - "[Manta9055](https://github.com/Manta9055/)"
+    - "[400538](https://github.com/400538/)"
+    - "[MiroslavHorky](https://github.com/MiroslavHorky/)"
+    - "[BarbSamb](https://github.com/BarbSamb/)"
+    - "[IndyIk](https://github.com/IndyIk/)"
+    - "[dominikamiholova](https://github.com/dominikamiholova/)"
+    - "[petulki](https://github.com/petulki/)"
+    - "[Vondrackova](https://github.com/Vondrackova/)"
+    - "[sonapin](https://github.com/sonapin/)"
+    - "[449103](https://github.com/449103/)"
+    - "[arecmanova](https://github.com/arecmanova/)"
+    - "[RadkaKacova](https://github.com/RadkaKacova/)"
+    - "[AnnBla](https://github.com/AnnBla/)"
+    - "[LucieKurdiovska](https://github.com/LucieKurdiovska/)"
+    - "[janikoci](https://github.com/janikoci/)"
+    - "[GlassJ](https://github.com/GlassJ/)"
+    - "[konarik](https://github.com/lucie-konarik/)"
+    - "[Hondza](https://github.com/Hondza/)"
+    - "[Paolahob](https://github.com/Paolahob/)"
+    - "[SMichaela](https://github.com/SMichaela/)"
+    - "[MichHajkova](https://github.com/MichHajkova/)"
+    - "[simonaku](https://github.com/simonaku/)"
+    - "[ElisPecinova](https://github.com/ElisPecinova/)"
+    - "[Pechackova](https://github.com/Pechackova/)"
+    - "[quentintarantula](https://github.com/quentintarantula/)"
+    - "[nami](https://github.com/Mikki-nami/)"
+    - "[Arisa221b](https://github.com/Arisa221b/)"
+    - "[463516](https://github.com/463516/)"
+    - "[ikeataska](https://github.com/ikeataska/)"
+    - "[Sarinator](https://github.com/Sarinator/)"
+    - "[371717](https://github.com/371717/)"
+    - "[git](https://github.com/cespi-git/)"
+    - "[kurotsubaki](https://github.com/kurotsubaki/)"
+    - "[437495](https://github.com/437495/)"
+    - "[Conerzyo](https://github.com/Conerzyo/)"
+    - "[EclecticGuy](https://github.com/EclecticGuy/)"
+questions: |
+  Najděte ve vlastních repozitářích uživatele/ky %user% pohádku, kterou vytvořil/a během některé z předchozích lekcí. 
+  
+  Repozitář si naklonujte, opravte či vylepšete kód CSS, a dané změny commitněte (dobře popište, co a proč jste změnili) a pošlete změny pomocí pull requestu zpět autorovi. 
+  
+  Vyžádejte si přijetí pull requestu u autora či autorky původního repozitáře — pokud změny nebude chtít přijmout, přepracujte je (případný spor řešte pomocí komentářů u pull requestu).
+  
+  Do vstupního pole vložte odkaz na pull request.
+input: html
+rubrics:
+  - checklist: ""
+    items: 
+      - V odpovědi je odkaz na pull request.
+      - Kód je vylepšený a autor úpravy vhodně popisuje, v čem vylepšení spočívá.
+      - Commit a pull request jsou dobře okomentované (popisy se mohou shodovat).
+      - Pull request byl přijat autorem či autorkou původního repozitáře.
+---
+# projekt
+bloom: create
+time: 20
+questions: |
+  V posledním úkol je potřebné vytvořit dvou- až tříčlenné projektové týmy. [Všechna témata jsou k nahlédnutí zde](http://jan-martinek.com/tmp/nami17/). Domluvte se s kolegy na složení týmu (využijte ISový mail, osobní kontakt, [hledací vlákno ve fóru](https://is.muni.cz/auth/cd/1421/jaro2017/VIKBA07/hledani) či jiný kanál) a zapište svůj tým do předepsaných políček [tabulce](https://docs.google.com/spreadsheets/d/1071SSrZKBsgwpHwPv_67ro5RX80j0S4s-K5-luDfjF0/edit#gid=0). 
+  
+  Do vstupního pole napište stejnou informaci: jména vašich týmových kolegů a název projektu, který se shoduje s názvem některého z témat z předchozí lekce. 
+  
+  > **Pozn.:** Studenti, kteří nebudou na konci lekce zařazeni do dvou- či tříčlenného týmu, budou do týmů přiřazeni náhodně.
+rubrics:
+  - checklist: ""
+    items: 
+      - Odpověď obsahuje název tématu a 2–3 členy týmu.
+      - Téma projektu je uvedeno v seznamu témat sesbíraných v předchozí lekci.
+      - Tým je zapsaný v odkazované tabulce.
