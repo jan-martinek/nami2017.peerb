@@ -2,6 +2,14 @@ name: "Remixování webu"
 summary: "Web je otevřený a v souladu s licencemi je možné skládat různé zdroje do jednoho celku."
 goals: |
   **Cílem této lekce je osvojit si několik základních způsobů, jak skládat data dostupná na webu do celků.** Konkrétně se mrkneme, jak funguje vkládání pomocí `iframe` a skriptů a pak si vyzkoušíme z určitého webu vytáhnout data a transformovat je do podoby, která je pro nás zajímavá.
+tags:
+  - Open web
+  - Remix
+  - Iframe
+  - XPath
+  - CSS
+  - Jekyll
+  - Projekt
 reading: |
   Přebírání dat dostupných na webu třetími stranami je významnou součástí fungování webu. Příkladem mohou být vyhledávače jako je [Google](http://google.com) či [Seznam](http://seznam.cz) nebo vkládání obsahu ze sociálních sítí a videoserverů.
 
