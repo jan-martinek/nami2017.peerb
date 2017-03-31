@@ -110,8 +110,7 @@ prefill: "\\\\"
 rubrics:
   - checklist: ""
     items: 
-      - Funkce `ImportXML` je správně použita.
-      - Požadovaný vyraz je správně sestavený.
+      - Požadovaný výraz je správně sestaven.
 ---
 # xpath
 bloom: apply
@@ -134,6 +133,7 @@ rubrics:
   - checklist: ""
     items: 
       - Odpověď obsahuje funkční odkaz na spreadsheet.
+      - Funkce `ImportXML` je správně použita.
       - Titulky z homepage jsou správně načteny.
       - Počítadlo korektně počítá titulky, v nichž se vyskytuje zvolené slovo.
 ---
