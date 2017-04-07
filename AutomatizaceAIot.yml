@@ -1,0 +1,167 @@
+name: Automatizace a IoT
+summary: |
+  V této lekci se podíváme, jak spojovat různé webové *služby* a zařízení mezi sebou.
+goals: |
+  Minule jsme si vyzkoušeli, jak využívat informace z jiných webů a sestavit z nich vlastní web. Tentokrát uděláme úkrok stranou: budeme spojovat různé webové služby a mrkneme, jak bychom mohli spojovat k internetu připojená zařízení. 
+reading: |
+  Obě témata jsou aktuální, proto jsou zdroje především v angličtině. Aby nebyl vstup do nové oblasti příliš tvrdý, najdete níže stručné úvody do problematiky.
+rubrics:
+  - Slovně zhodnoťte případné nedostatky tohoto úkolu.
+preface:
+---
+bloom: understand
+time: 2h
+params:
+  article:
+    - "[Eric Escobar: What Is IFTTT and How Can it Improve Your Digital Life?](http://www.quickanddirtytips.com/tech/web/what-is-ifttt-and-how-can-it-improve-your-digital-life) (pozor, článek má tři stránky)"
+    - "[Jason Carpenter: The Best IFTTT Applets](http://www.tomsguide.com/us/pictures-story/1032-best-ifttt-applets.html)"
+    - "[Jason Carpenter: The Best IFTTT Applets for Amazon Alexa](http://www.tomsguide.com/us/pictures-story/991-best-ifttt-applets-for-alexa.html)"
+    - "[Rob Nightingale: IFTTT Applets Are Finally Here: What You Need to Know](http://www.makeuseof.com/tag/ifttt-applets-finally-need-know/)"
+    - "[David Nield: 15 New IFTTT Triggers to Make Life Easier](http://fieldguide.gizmodo.com/15-new-ifttt-triggers-to-make-life-easier-1788943325)"
+    - "[James A. Martin: 32 IFTTT applets to help you handle the holidays](http://www.cio.com/article/3141995/mobile-apps/32-ifttt-applets-to-help-you-handle-the-holidays.html)"
+    - "[Daniel Aditya Istyana: 5 useful IFTTT Applets that will save you time](https://theappfactor.com/5-useful-ifttt-applets-that-will-save-your-time/)"
+    - "[Dan Sung: Best IFTTT Applets for your smart home](https://www.wareable.com/smart-home/best-ifttt-recipes)"
+    
+questions: |
+  ### Spojování webových služeb
+  
+  **Jak to vypadá? Začněme s příklady.** 
+  
+  - Přidáte do kopie e-mailu extra adresu a vytvoříte úkol v Trellu nebo v Google Tasks. *Nebo to samé uděláte ohvězdičkováním e-mailu.*
+  - Vyfotíte fotku Instagramem a pak o nich tweetnete. *Nebo se na Twitter přenese automaticky.*
+  - Vybrané přílohy pracovních mailů si vždy uložíte do odatované složky na Dropboxu. *Anebo se to stane díky tomu, že na určitou adresu přepošlete e-mail.* 
+  - Děláte rutinní úkoly (kontrola mailu, zalévání kytek)? *Nechte si pravidelně vygenerovat checklist a večer vám přijde vyhodnocení.*
+  
+  A tak dále.
+  
+  Spojování webových služeb znamená jednoduše to, že **v jedné službě něco uděláte a způsobí to další změnu jinde**. Čím více různých služeb používáte (e-mail, sociální sítě, kalendář, textové a tabulkové procesory, chytré domácí osvětlení), tím širší možnosti vám nabízejí služby jako [IFTTT](https://ifttt.com/), [Zapier](https://zapier.com) a [další](https://www.google.cz/?#q=ifttt+alternatives).
+  
+  ### Úkol
+
+  Přečtěte si článek **%article%** a shrňte jej. Vyberte 3 pro vás nejzajímavější zmíněné applety (dříve „recepty“) a popište je v kontextu.
+  
+  #### Kontext
+  
+  Širší kontext můžete získat četbou dalších textů, které se věnují automatizaci (pozor, některé z článků jsou rozděleny na více částí):
+  
+  - [Eric Escobar: What Is IFTTT and How Can it Improve Your Digital Life?](http://www.quickanddirtytips.com/tech/web/what-is-ifttt-and-how-can-it-improve-your-digital-life)
+  - [Jason Carpenter: The Best IFTTT Applets](http://www.tomsguide.com/us/pictures-story/1032-best-ifttt-applets.html)
+  - [Jason Carpenter: The Best IFTTT Applets for Amazon Alexa](http://www.tomsguide.com/us/pictures-story/991-best-ifttt-applets-for-alexa.html)
+  - [Rob Nightingale: IFTTT Applets Are Finally Here: What You Need to Know](http://www.makeuseof.com/tag/ifttt-applets-finally-need-know/)
+  - [David Nield: 15 New IFTTT Triggers to Make Life Easier](http://fieldguide.gizmodo.com/15-new-ifttt-triggers-to-make-life-easier-1788943325)
+  - [James A. Martin: 32 IFTTT applets to help you handle the holidays](http://www.cio.com/article/3141995/mobile-apps/32-ifttt-applets-to-help-you-handle-the-holidays.html)
+  - [Daniel Aditya Istyana: 5 useful IFTTT Applets that will save you time](https://theappfactor.com/5-useful-ifttt-applets-that-will-save-your-time/)
+  - [Dan Sung: Best IFTTT Applets for your smart home](https://www.wareable.com/smart-home/best-ifttt-recipes)
+rubrics:
+  - checklist: ""
+    items: 
+      - Shrnutí je srozumitelné.
+      - Pojmy jsou používány správně.
+      - Popis vybraných appletů je srozumitelný.
+---
+bloom: create
+time: 1h
+questions: |
+  Najděte ve službě [IFTTT](https://ifttt.com) (či jiné odbdobné službě) applet, který vám pomůže s konkrétní činností v aplikacích, které již využíváte (jiný, než v předchozí otázce). 
+  
+  Popište danou činnost a jak při ní využíváte dané aplikace, funkčnost appletu a odhadněte, kolik času měsíčně by vám automatizace ušetřila.
+  
+  Zhodnoťte, zda se vám vyplatí nastavovat automatizaci nebo zda časová investice do hledání nástrojů a jejich nastavování časovou úsporu nevyváži.
+  
+  Pokud již nástroj používáte, popište klidně i již vámi používané applety.
+rubrics:
+  - checklist: ""
+    items: 
+      - Applet je popsaný v souladu se zadáním.
+      - Popis činnosti a aplikace appletu je srozumitelný.
+      - Vybraný applet skutečně slouží účelu, ke kterému jej autor/ka chce využít.
+      - Zhodnocení je promyšlené a v kalkulaci nic zásadního neschází.
+---
+bloom: understand
+time: 1h30
+params:
+  article:
+    - "**[Marcus Costello: What does tomorrow's farm look like?](https://amplifybusiness.com/what-does-tomorrows-farm-look)**"
+    - "**[Tamara Dull: Big data and the Internet of Things: Two sides of the same coin?](http://www.sas.com/en_us/insights/articles/big-data/big-data-and-iot-two-sides-of-the-same-coin.html)**"
+    - "**[Kaushik Pal: Impact of IoT on Big Data Landscape](http://www.kdnuggets.com/2015/07/impact-iot-big-data-landscape.html)**"
+    - "**[Jason Bloomberg: 7 Reasons Why The Internet Of Things Is Doomed](http://www.wired.com/insights/2014/07/7-reasons-internet-things-doomed/)**"
+    - "**[Curtis Franklin Jr.: 10 Raspberry Pi Projects For Learning IoT](http://www.informationweek.com/software/enterprise-applications/10-raspberry-pi-projects-for-learning-iot/d/d-id/1320757)** (projděte si celý seznam a vyberte si 3 projekty, které vás zaujmou)"
+    - "**[Todd Henderson: 7 Cool Iot Projects Worth Checking Out](https://www.losant.com/blog/7-cool-iot-projects-worth-checking-out)**"
+questions: |
+  ### Internet věcí
+
+  **Dalším krokem je takzvaný „internet věcí“ (Internet of Things, IoT).** Není to nic složitého: k internetu můžete připojit „každou blbost“ — což pak mění způsob, jak tyto věci používáme.
+  
+  Od pověstné ledničky, která ví, co vám chybí ([zatím neví, ale tuší, že se něco pokazilo](http://www.theverge.com/2016/1/4/10707894/samsung-smart-refrigerator-connected-fridge-iot-ces-2016)) a [kávovaru, který ví, že že lezete z postele](http://smarter.am/coffee/), přes [krokoměry a další fitness zařízení](http://www.wareable.com/fitness-trackers/the-best-fitness-tracker), senzory [teploty, vlhkosti](http://electronut.in/IoT-temp-sensor/) nebo znečištění ozduší (mrkněte na [český social-innovation projekt Kanárci.cz](http://kanarci.cz)), až po [chytrý kurník](http://www.intelfreepress.com/news/smart-chicken-coop-hacking-the-henhouse/9654/).
+  
+  **Princip je vždy velmi podobný: zařízení připojené k internetu něco zjistí a dá vám o tom vědět:** 
+  
+  - Krokoměr vám pošle pochvalný e-mail, protože jste se neflákali. 
+  - Senzor vlhkosti upozorní, že jste dlouho nezalili kytky (anebo pustí vodu). 
+  - Kurník tweetne, když slepice snese vajíčko a pozná, která nese nejvíc. 
+  
+  Je to důsledek toho, že počítače a různé čipy jsou dostatečně malé a levné na to, aby se daly [zamontovat do všeho](https://twitter.com/internetofshit). (Vygooglete si *„smart &lt;cokoli&gt;“* a uvidíte.)
+  
+  Krom toho, že zařízení upozorňují vás, může to být i naopak. **Můžete dát e-mailem, SMSkou či tweetem, klikem v mobilní aplikaci, slovním příkazem, nějakým pohybem či jinou akcí (např. [kýchnutím](https://github.com/vadimostanin2/sneeze-detector)) dát vědět zařízení, že má něco udělat. Anebo se kruh uzavře a jedno zařízení upozorní druhé, aby něco udělalo** – např. dešťový senzor upozorní střešní okna, aby se zavřela a pokud zjistí, že některé z nich neodpovědělo, pošle vám SMSku.
+  
+  #### Využití při práci
+  
+  Zajímavá využití se nabízí nejen v domácnosti a v kanceláři, ale i při „blue collar“ práci jako je zemdělství, strojírenství apod.: tam často nejde o jedinečná zařízení, ale spíše o [velká množství senzorů](http://sensorsandsystems.com/precision-agriculture-sensors-drive-agricultural-efficiency/), které sbírají data, a [stroje, které se z těchto dat učí](https://www.quora.com/How-is-machine-learning-used-in-agriculture).
+  
+  #### Bezpečnost
+  
+  **Propojení velkého množství nezávislých komponent má svá rizika**: jednak běžnou poruchovost, ale též riziko útoku. Současná zařízení jsou často nechráněná, popř. obsahují bezpečnostní chyby, které umožňují napadení. Pokud vám někdo doma vypne světla, nemusí to být tak hrozné. „Méně příjemné“ je, pokud někdo získá přístup do webkamery, kterou hlídáte domovní vchod, zahradu nebo své dítě. Nebo rovnou k vašemu domovnímu zámku.
+
+  ### Úkol
+
+  Přečtěte si článek %article% a shrňte jej. Popište svůj pohled na danou problematiku a položte čtenáři vašeho textu dvě otázky, které vycházejí z textu. (Očekáváná délka odpovědi na tuto otázku je alespoň 800 znaků.)
+  
+  #### Kontext
+  
+  Širší kontext můžete získat četbou dalších textů, které se věnují využití i rizikům IoT:
+  
+  - [Marcus Costello: What does tomorrow's farm look like?](https://amplifybusiness.com/what-does-tomorrows-farm-look)
+  - [Tamara Dull: Big data and the Internet of Things: Two sides of the same coin?](http://www.sas.com/en_us/insights/articles/big-data/big-data-and-iot-two-sides-of-the-same-coin.html)
+  - [Kaushik Pal: Impact of IoT on Big Data Landscape](http://www.kdnuggets.com/2015/07/impact-iot-big-data-landscape.html)
+  - [Jason Bloomberg: 7 Reasons Why The Internet Of Things Is Doomed](http://www.wired.com/insights/2014/07/7-reasons-internet-things-doomed/)
+  - [Curtis Franklin Jr.: 10 Raspberry Pi Projects For Learning IoT](http://www.informationweek.com/software/enterprise-applications/10-raspberry-pi-projects-for-learning-iot/d/d-id/1320757)
+  - [Todd Henderson: 7 Cool Iot Projects Worth Checking Out](https://www.losant.com/blog/7-cool-iot-projects-worth-checking-out)
+rubrics:
+  - checklist: ""
+    items: 
+      - Shrnutí je srozumitelné.
+      - Pojmy jsou používány správně.
+      - Autorův či autorčin postoj se nemíjí s obsahem článku.
+      - Položené otázky nejsou triviální nebo zodpověditelné pouhým hledáním v článku.
+  - "Odpovězte na položené otázky."
+---
+bloom: create
+time: 3h
+questions: |
+  **Společně s dalšími členy vašeho týmu** promyslete následující náležitosti vašeho projektu:
+  
+  1. Cílovou skupinu či skupiny (buďte konkrétní — „kdokoli“ a podobné definice jsou nepřípustné)
+  2. Cíl webu (alespoň 280 znaků)
+  3. Název webu
+  4. Seznam alespoň 5 zásadních webových zdrojů, které se věnují stejné oblasti
+  5. Seznam alespoň 5 zásadních ne-webových zdrojů, které se věnují stejné oblasti
+  6. Prozkoumejte dostupná multimédia (obrázky, videa atp.) a odkažte na ně
+  7. Vizuální inspiraci pro budoucí vzhled webu (weby, obrázky, designové prvky atp.)
+  8. Základní obsah k tématu (alespoň 10 odrážek v logické struktuře)
+  9. Strategii zveřejňování obsahu: jaké informace a jakým způsobem budete zveřejňovat?
+  
+  **Vše umístětě v logické struktuře na stránku *About*** (najdete ji v souboru `about.md` v kořenové složce — můžete ji přejmenovat a změnit odkaz (na „O nás“, „O projektu“ apod.), jen si pak pohlídejte odkazy a soubor `structure.yml`).
+  
+  Do druhého příspěvku v blogu ([opatrně na název souboru](https://is.muni.cz/auth/cd/1421/jaro2016/VIKBA07/62746887)) popište tým, jeho členy a svou motivaci pro dané téma.
+  
+  > **Tip:** Nenechávejte úkol na poslední chvíli a při tvorbě spolupracujte – na konci semestru bude potřebné (a v testu kontrolované), aby projektu a jeho stavbě rozuměl každý ze členů týmu. Pokud se nemůžete setkat osobně, doporučuji alespoň skupinový online hovor.
+  
+  Do vstupního pole uveďte odkaz na svůj projektový repozitář a na zveřejněnou webovou stránku. V poli pro komentář popište a zhodnoťte, jak proběhla týmová spolupráce (alespoň 300 znaků).
+comments: 10
+rubrics:
+  - checklist: "(Pokud se setkáte se stejným úkolem vícekrát, můžete hodnocení „překopírovat“. Věnujte však prosím pozornost komentáři k týmové práci.)"
+    items: 
+      - Úkol je zpracován.
+      - Všechny požadované odkazy a stránky na webu zveřejněném prostřednictvím Github Pages jsou funkční.
+      - Týmová práce je zhodnocena v požadovaném rozsahu.
+  - "Zhodnoťte slovně týmový úkol a v krátkosti porovnejte popsané zkušenosti s týmovou prací s vlastní zkušeností."
