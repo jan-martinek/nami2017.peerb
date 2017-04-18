@@ -1,0 +1,184 @@
+name: "Open Data, Big Data a analytické nástroje"
+summary: "Tato lekce představí otevřená data (Open Data), velká data (Big Data) a analytické nástroje pro jejich zkoumání."
+goals: |
+  Cílem této lekce je porozumění konceptu otevřených dat, nahlédnutí do povahy velkých dat (big data) a úvodní vhled do používání analytických nástrojů.
+reading:
+rubrics:
+  - Slovně zhodnoťte případné nedostatky tohoto úkolu.
+preface: 
+---
+# open data article
+bloom: evaluate
+params:
+  article:
+    - "článek *[Tom Steinberg: Over-politeness Is The Fatal Flaw In The Open Data Movement](http://civichall.org/civicist/over-politeness-is-the-fatal-flaw-in-the-open-data-movement/)*"
+    - "článek *[Alan Freihof Tygel, Maria Luiza Machado Campos, Celso Alexandre Souza de Alvear: Teaching Open Data for Social Movements: a Research Strategy](http://ci-journal.net/index.php/ciej/article/view/1220/1165)* (od úvodu kapitoly *Course Description* můžete přeskočit až k podkapitole *Synthesis* v následující kapitole *Course Analysis*)"
+    - "článek *[Barbara J. Parker, Kiran Jain: The Challenges of Open Data and Privacy Issues](http://www.westerncity.com/Western-City/April-2015/The-Challenges-of-Open-Data-and-Privacy-Issues/)*"
+    - "článek *[Sharon S. Dawes: A Realistic Look at Open Data](http://www.w3.org/2012/06/pmod/pmod2012_submission_38.pdf)*"
+    - "článek *[Open data means business: UK innovation across sectors and regions: Challenges for open data companies](https://theodi.org/challenges-for-open-data-companies)*"
+    - "článek *[Tony Roberts: The problem with Open Data](http://www.computerweekly.com/opinion/The-problem-with-Open-Data)*"
+    - "článek *[Donald Cowan, Paulo Alencar, Fred McGarry: Perspectives on Open Data: Issues and Opportunties](https://uwaterloo.ca/canadian-index-wellbeing/sites/ca.canadian-index-wellbeing/files/uploads/files/perspective_on_open_data-issues_and_opportunities.pdf) (v druhé kapitole nemusíte procházet všechny příklady, ale přečtěte si závěrečné *Summary*)*"
+    - "dva kratší články *[David Hand: Open data is a force for good, but not without risks](http://www.theguardian.com/society/2012/jul/10/open-data-force-for-good-risks) a [Tod Newcombe: The (Hidden) Cost of Open Data](http://www.governing.com/columns/tech-talk/gov-open-data-cost-problems.html)*"
+questions: |
+  ### Otevřená data
+  
+  Základní informace o otevřených datech není třeba přepisovat: přečtěte si [velmi stručný úvod do problematiky](http://archiv.ihned.cz/c1-65264440-sloupek-data-otevrena-budoucnosti) a základní charakteristiky otevřených dat na webu [OtevřenáData.cz](http://www.otevrenadata.cz/otevrena-data/) (tento web je zajímavý celý díky zaměření na ČR). V úkolech se zaměříme na detaily, problémy a budoucnost otevřených dat v konkrétních příkladech. 
+  
+  Přečtěte si %article% a stručně jej shrňte. Následně vyjádřete svůj postoj k přečtenému a položte hodnotiteli či hodnotitelce svého úkolu dvě otázky, které nejsou vědomostní. (Ptejte se na to, co vás zaujalo, čemu nerozumíte, co vám připadá divné atp.)
+  
+  Minimální délka odpovědi je 800 znaků.
+  
+  #### Kontext
+  
+  Širší kontext můžete získat přečtením dalších textů, které jsou přiloženy k tomuto úkolu:
+  
+  - [Alan Freihof Tygel, Maria Luiza Machado Campos, Celso Alexandre Souza de Alvear: Teaching Open Data for Social Movements: a Research Strategy](http://ci-journal.net/index.php/ciej/article/view/1220/1165)
+  - [Barbara J. Parker, Kiran Jain: The Challenges of Open Data and Privacy Issues](http://www.westerncity.com/Western-City/April-2015/The-Challenges-of-Open-Data-and-Privacy-Issues/)
+  - [David Hand: Open data is a force for good, but not without risks](http://www.theguardian.com/society/2012/jul/10/open-data-force-for-good-risks)
+  - [Donald Cowan, Paulo Alencar, Fred McGarry: Perspectives on Open Data: Issues and Opportunties](https://uwaterloo.ca/canadian-index-wellbeing/sites/ca.canadian-index-wellbeing/files/uploads/files/perspective_on_open_data-issues_and_opportunities.pdf)
+  - [Open data means business: UK innovation across sectors and regions: Challenges for open data companies](https://theodi.org/challenges-for-open-data-companies)
+  - [Sharon S. Dawes: A Realistic Look at Open Data](http://www.w3.org/2012/06/pmod/pmod2012_submission_38.pdf)
+  - [Tod Newcombe: The (Hidden) Cost of Open Data](http://www.governing.com/columns/tech-talk/gov-open-data-cost-problems.html)
+  - [Tom Steinberg: Over-politeness Is The Fatal Flaw In The Open Data Movement](http://civichall.org/civicist/over-politeness-is-the-fatal-flaw-in-the-open-data-movement/)
+  - [Tony Roberts: The problem with Open Data](http://www.computerweekly.com/opinion/The-problem-with-Open-Data)
+rubrics:
+  - checklist: ""
+    items: 
+      - Shrnutí má požadovaný rozsah.
+      - Shrnutí je srozumitelné (bez znalosti článku).
+      - Položené otázky mi umožnily zamyslet se nad tématem.
+  - "Zodpovězte otázky položené v první úloze."
+---
+# open data create
+bloom: evaluate
+questions:
+  - |
+    Zamyslete se, jaká data byste chtěli znát o obci, kde máte trvalé bydliště (pokud zde nebydlíte, zamyslete se nad obdobím, kdy to tak bylo). 
+    
+    Jaké problémy, klíčové veřejné služby, provozní údaje, investiční náklady atp. by bylo dobré znát? Jsou daná data nyní dostupná snadno? Kdo k nim má nyní přístup? (Zvažujte pouze data, o kterých je důvodné předpokládat, že jsou někde uložena.) 
+  - |
+    Vyberte si z aplikací na stránce [Aktivní občan](https://www.brno.cz/aktivni-obcan/) jeden funkční projekt a jeden prototyp, oba **vlastními slovy** popište:
+      
+    1. Co je cílem daného projektu?
+    2. Jaká data projekt využívá?
+    3. Kdy začaly práce na projektu a v jakém je nyní stavu?
+  - |
+    Vyberte si dvě z dostupných datových sad, které zveřejňuje [město Brno na serveru datahub.io](https://datahub.io/organization/statutarni-mesto-brno), které jsou pro vás srozumitelné (jak to, co popisují, tak alespoň část uložených dat).
+    
+    Popište, co data obsahují, v jakých formátech jsou zveřejněna, jaká licence je využita a k čemu by se dala tato data využít.
+rubrics:
+  - checklist: ""
+    items: 
+      - Úkol je zcela splněn.
+      - Odpověď je srozumitelná.
+      - Termíny jsou v odpovědi používány správně.
+---
+# big data intro
+bloom: apply
+params:
+  article:
+    - "článkem *[Michal Černý: Big data a jejich zpracování](http://www.root.cz/clanky/big-data-a-jejich-zpracovani/)*"
+    - "videem *[Patrick Schwerdtfeger: What is Big Data? Big Data Explained (Hadoop & MapReduce)](https://www.youtube.com/watch?v=c4BwefH5Ve8)*"
+    - "článkem *[What is big data?](https://opensource.com/resources/big-data)*"
+    - "článkem *[Ondřej Dolák: Big data — Nové způsoby zpracování a analýzy velkých objemů dat](http://www.systemonline.cz/clanky/big-data.htm)*"
+  term:
+    - '*Apache Hadoop*'
+    - '*MapReduce*'
+    - '*Apache Spark*'
+    - '*škálovatelnost* (scalability)'
+    - '*dashboard* (v kontextu big data)'
+    - '*živá vizualizace* (live visualisation; v kontextu big data)'
+questions: |
+  ### Big data
+  
+  Big data označují datové sady, u nichž nesejde na jednotlivých řádcích. Jsou to záznamy vytvořené díky počítačům: například jde o data o návštěvnosti webů, produkční statistiky automobilky anebo podrobně zaznamenaná data o počasí. 
+  
+  Nejde o termín, který označuje něco konkrétního: spíše jde o název pro trend. Jde o přístup k práci s daty (jejich získávání, zpracování a analýzu). Poznávacím znakem je především redukce výsledných dat do průběžně aktualizovaných ukazatelů.
+  
+  #### Úkol
+
+  Nechte se uvést do tématu big data %article% a krátce jej shrňte (dvě až tři rozvité věty). 
+  
+  Následně vlastními slovy popište, co znamená termín %term%. Při tvorbě definice dohledejte jeden další, v úkolu neuvedený zdroj, kterým definici podpoříte.
+  
+  #### Kontext
+  
+  Alternativním úvodem do tématu mohou být i následující články a videa:
+    
+  - [Michal Černý: Big data a jejich zpracování](http://www.root.cz/clanky/big-data-a-jejich-zpracovani/)
+  - [Ondřej Dolák: Big data — Nové způsoby zpracování a analýzy velkých objemů dat](http://www.systemonline.cz/clanky/big-data.htm)
+  - [Patrick Schwerdtfeger: What is Big Data? Big Data Explained (Hadoop & MapReduce)](https://www.youtube.com/watch?v=c4BwefH5Ve8) (video)
+  - [Opensource.com: What is big data?](https://opensource.com/resources/big-data)
+rubrics:
+  - checklist: ""
+    items: 
+      - Článek je shrnutý ve 2–3 větách.
+      - Definice je správně vytvořena.
+      - Definice není zkopírována z jiného zdroje.
+      - Zvolený zdroj obsahuje informace, které neobsahují zdroje zadané v úkolu.
+      - Autor/ka čerpá z dohledaného zdroje při definování zadaného termínu.
+---
+# big data article
+bloom: evaluate
+params:
+  article:
+    - "[Adam Riglian: 'Big data' collection efforts spark an information ethics debate](http://searchcloudapplications.techtarget.com/feature/Big-data-collection-efforts-spark-an-information-ethics-debate)"
+    - "[John Rollins: Why we need a methodology for data science](http://www.ibmbigdatahub.com/blog/why-we-need-methodology-data-science)"
+    - "[Jonathan H. King, Neil M. Richards: What's Up With Big Data Ethics?](http://www.forbes.com/sites/oreillymedia/2014/03/28/whats-up-with-big-data-ethics/#2a5e8dad2964)"
+    - "[Margaret Steen: Ethical Uses of Collected Data](https://www.scu.edu/ethics/focus-areas/business-ethics/resources/ethical-uses-of-collected-data/)"
+    - "[Éanna Kelly: UK government plans ethics council to guide big data researchers](http://www.sciencebusiness.net/news/79758/UK-government-plans-ethics-council-to-guide-big-data-researchers)"
+questions: |
+  V návaznosti na předchozí úlohu si přečtěte článek *%article%* a výstižně shrňte jeho hlavní poselství. (Jeden delší odstavec textu, min. 500 znaků.)
+  
+  #### Kontext
+  
+  Pokud něco není jasné, možná pomohou související texty:
+  
+  - [Adam Riglian: 'Big data' collection efforts spark an information ethics debate](http://searchcloudapplications.techtarget.com/feature/Big-data-collection-efforts-spark-an-information-ethics-debate)
+  - [John Rollins: Why we need a methodology for data science](http://www.ibmbigdatahub.com/blog/why-we-need-methodology-data-science)
+  - [Jonathan H. King, Neil M. Richards: What's Up With Big Data Ethics?](http://www.forbes.com/sites/oreillymedia/2014/03/28/whats-up-with-big-data-ethics/#2a5e8dad2964)
+  - [Margaret Steen: Ethical Uses of Collected Data](https://www.scu.edu/ethics/focus-areas/business-ethics/resources/ethical-uses-of-collected-data/)
+  - [Éanna Kelly: UK government plans ethics council to guide big data researchers](http://www.sciencebusiness.net/news/79758/UK-government-plans-ethics-council-to-guide-big-data-researchers)
+rubrics:
+  - checklist: ""
+    items: 
+      - Shrnutí má požadovaný rozsah.
+      - Shrnutí je srozumitelné (bez znalosti článku).
+      - Termíny jsou v odpovědi používány správně.
+---
+# - open data na týmový projekt
+# - CSS na týmový projekt
+# - GA na týmový projekt
+bloom: create
+comments: 5
+questions: |
+  ### Analytické nástroje
+  
+  Analytických nástrojů, které pracují s velkými daty, je mnoho. Analýza dat o zemědělství je většině z nás vzdálená, ale např. s nástroji, užívanými v online marketingu a na sociálních sítích (Google Analytics, Facebook Insights atp.) se můžete snadno setkat při různých školních, pracovních i volnočasových aktivitách. 
+  
+  > Protože jde o metriky a nástroje, které dnes při komunikaci s klienty využívá téměř každá organizace, můžete se se samotným nástrojem nebo jeho výstupy setkat na různých pozicích — nejen na pozici PR nebo v marketingu.
+  
+  S Google Analytics budeme pracovat v rámci týmového projektu: na starosti jej bude mít jeden člen týmu, ale o výsledcích byste se měli bavit všichni.
+  
+  #### Další krok týmového projektu
+
+  V projektovém týmu si rozdělte níže popsané tři úlohy (nezačínejte, dokud nebudete ve shodě ohledně rozdělení úkolů). Vzájemně si dejte vědět, jak to šlo a na jaké jste narazili problémy (příště se role protočí). 
+  
+  > **Poznámky:** Na úkolech můžete spolupracovat, ale zodpovědnost za každou z částí přijímá jeden ze členů. Každý člen týmu pracuje s týmovým repozitářem a využívá větví a *pull requestů*. Pokud jste v týmu pouze dva, vynechte první úkol.
+  
+  1. **(Otevřená) data pro projekt.** Najděte externí data, která je možné ve vašem projektu využít: mohou to být konkrétní data, která se týkají vašeho předmětu zájmu anebo data, která s ním souvisejí (např. nemusí jít o data, která popisují *Ptactvo na jižní Moravě*, ale může jít o databázi ptáků anebo obdobnou datovou sadu z jiného regionu.) Vytvořte nový příspěvek na webu (post), kde odkažte na tyto zdroje a podrobně popište o jaká data jde, pod jakou licencí jsou dostupná a k jakým účelům byste je vy a vaši čtenáři mohli využít. (Přípravu pro tento úkol již možná máte na stránce *o webu*.)
+  
+  2. **CSS a šablony v Jekyllu.** Na základě návrhů změn a moodboardů, které jste vy a vaši týmoví kolegové vytvořili v předchozím úkolu (sesbírejte si je), zpracujte změny v šablonách a v CSS. (Popis práce s Jekyllem najdete v předchozím úkolu.) Pokud něco nebudete zapracovávat, zdůvodněte to ve vstupním poli.
+  
+  3. **Nasazení Google Analytics a získání základního přehledu o využitém nástroji.** Na týmový Jekyll nasaďte Google Analytics (postup dohledejte na internetu – není to složité). Do vstupního pole popište, jaké metriky budete měřit (doporučení dohledejte online) a jaké jsou v těchto metrikách cíle vašeho projektu (např. *bounce rate v měsíci květnu bude pod 50 %*).
+  
+  Na tento úkol si vyhraďte alespoň 3 hodiny, abyste se zvládli domluvit na postupu. Do vstupního pole vložte krom výše zmíněného odkaz na týmový repozitář a případné pull requesty (pohlídejte si, aby byly uzavřené). 
+  
+  Do pole pro komentář popište a zhodnoťte průběh týmové spolupráce.
+rubrics:
+  - checklist: ""
+    items: 
+      - Úkol obsahuje odkazy potřebné pro jeho ohodnocení.
+      - Je jasné, kterou týmovou roli zastává autor/ka úkolu.
+      - Komentář popisující týmovou spolupráci není odbytý.
+  - "Pokud se ve zpracování týmového úkolu objevují problémy, okomentujte je."
