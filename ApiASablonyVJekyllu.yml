@@ -113,7 +113,6 @@ rubrics:
     items: 
       - Kód je vytvořen správně.
       - Parametry jsou zadány správně.
-      - Odpověď obsahuje komentář dle zadání (důvody pro výběr, použité volitelné parametry).
 ---
 # šablony - soubory, oddíly (front matter)
 bloom: understand
