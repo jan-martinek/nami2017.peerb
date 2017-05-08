@@ -2,6 +2,15 @@ name: "API a šablony v Jekyllu"
 summary: "API definuje rozhraní aplikace. V Jekyllu se naučíme psát šablony."
 goals: |
   Cílem této lekce je porozumět konceptu aplikačního rozhraní (API) a naučit se základní dovednosti při práci s šablonami v Jekyllu.
+tags: 
+  - API 
+  - šablonování 
+  - template 
+  - Jekyll 
+  - Liquid 
+  - branch 
+  - master 
+  - feature branch
 reading:
 rubrics:
   - Slovně zhodnoťte případné nedostatky tohoto úkolu.

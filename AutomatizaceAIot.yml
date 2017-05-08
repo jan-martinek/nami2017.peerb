@@ -3,6 +3,9 @@ summary: |
   V této lekci se podíváme, jak spojovat různé webové *služby* a zařízení mezi sebou.
 goals: |
   Minule jsme si vyzkoušeli, jak využívat informace z jiných webů a sestavit z nich vlastní web. Tentokrát uděláme úkrok stranou: budeme spojovat různé webové služby a mrkneme, jak bychom mohli spojovat k internetu připojená zařízení. 
+tags:
+  - IoT
+  - automatizace
 reading: |
   Obě témata jsou aktuální, proto jsou zdroje především v angličtině. Aby nebyl vstup do nové oblasti příliš tvrdý, najdete níže stručné úvody do problematiky.
 rubrics:
@@ -139,6 +142,8 @@ bloom: create
 time: 3h
 questions: |
   **Společně s dalšími členy vašeho týmu** promyslete následující náležitosti vašeho projektu:
+    
+  > Pokud nejste zatím součástí žádné z týmu, domluvte se na spolupráci.[Všechna témata jsou k nahlédnutí zde](http://jan-martinek.com/tmp/nami17/). Domluvte se s kolegy na složení týmu (využijte ISový mail, osobní kontakt, [hledací vlákno ve fóru](https://is.muni.cz/auth/cd/1421/jaro2017/VIKBA07/hledani) či jiný kanál) a zapište svůj tým do předepsaných políček [tabulce](https://docs.google.com/spreadsheets/d/1071SSrZKBsgwpHwPv_67ro5RX80j0S4s-K5-luDfjF0/edit#gid=0). 
   
   1. Cílovou skupinu či skupiny (buďte konkrétní — „kdokoli“ a podobné definice jsou nepřípustné)
   2. Cíl webu (alespoň 280 znaků)
