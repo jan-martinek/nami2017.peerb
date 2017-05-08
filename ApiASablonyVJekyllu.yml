@@ -82,7 +82,7 @@ comments: 5
 rubrics:
   - checklist: ""
     items: 
-      - V odpovědi jsou tři různý volání.
+      - V odpovědi jsou tři různá volání.
       - Parametry jsou zadány správně.
       - Odpověď obsahuje komentář dle zadání (důvody pro výběr, použité volitelné parametry).
       - Výsledky všech tří volání se správně zobrazují v prohlížeči.
