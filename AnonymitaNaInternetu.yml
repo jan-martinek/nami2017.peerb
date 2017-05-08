@@ -1,0 +1,248 @@
+name: "Anonymita na internetu a Dark Web"
+summary: "Anonymita na internetu a webová sídla umístěná v deep webu, kam vyhledávače nedohlédnou."
+goals: |
+  Cílem této lekce je porozumět, k čemu může sloužit anonymita na internetu a jak se jí dá dosáhnout. Krom toho se seznámíme s *temným webem* — webovými sídly, které jsou součástí tzv. *deep webu*, mimo dosah internetových vyhledávačů. Podstatné je uvědomění si relevance tématu pro vlastní osobní i pracovní život.
+tags:
+  - anonymita
+  - soukromí
+  - darkweb
+reading: |  
+  Úlohami se prolíná znalost technologie VPN, proto doporučuji přečíst alespoň nějaký text na toto téma. Například [článek na serveru Lifehacker](http://lifehacker.com/5940565/why-you-should-start-using-a-vpn-and-how-to-choose-the-best-one-for-your-needs).
+time: 20
+rubrics:
+  - Slovně zhodnoťte případné nedostatky tohoto úkolu.
+preface: 
+---
+# anonymity teorie
+bloom: understand
+time: 1h30
+params:
+  article:
+    - "[Jon Card: *Anonymity is the internet's next big battleground*](http://www.theguardian.com/media-network/2015/jun/22/anonymity-internet-battleground-data-advertisers-marketers)"
+    - "[Grant Brunner: *The ultimate guide to staying anonymous and protecting your privacy online*](http://www.extremetech.com/internet/180485-the-ultimate-guide-to-staying-anonymous-and-protecting-your-privacy-online)"
+    - "[Computer Hope: *How To Be Anonymous On The Internet*](http://www.computerhope.com/issues/ch000982.htm)"
+    - "[John R. Quain: *The end of Internet anonymity*](http://www.foxnews.com/tech/2015/08/25/end-internet-anonymity.html)"
+    - "[Wikipedia: *Anonymity on the Internet*](https://en.wikipedia.org/wiki/Anonymity#Anonymity_on_the_Internet) (jde o část hesla *Anonymity*)"
+questions: |
+  ### Anonymita na internetu
+
+  **Anonymita na internetu** je tématem od samotného vzniku internetu, kdy [*nikdo nevěděl, že jste pes*](https://en.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you%27re_a_dog). Dnes téměř každý web v nějaké formě měří a vyhodnocuje chování návštěvníků a převládá představa, že [měřit je možné téměř všechno](http://www.economist.com/node/7138905).
+  
+  #### Zadání úkolu
+
+  Na základě četby textu %article% sepište jeho shrnutí (min. 400 znaků). Širší kontext můžete získat i proskenováním ostatních textů:
+    
+  - [Computer Hope: *How To Be Anonymous On The Internet*](http://www.computerhope.com/issues/ch000982.htm)
+  - [Grant Brunner: *The ultimate guide to staying anonymous and protecting your privacy online*](http://www.extremetech.com/internet/180485-the-ultimate-guide-to-staying-anonymous-and-protecting-your-privacy-online)
+  - [John R. Quain: *The end of Internet anonymity*](http://www.foxnews.com/tech/2015/08/25/end-internet-anonymity.html)
+  - [Jon Card: *Anonymity is the internet's next big battleground*](http://www.theguardian.com/media-network/2015/jun/22/anonymity-internet-battleground-data-advertisers-marketers)
+  - [Wikipedia: *Anonymity on the Internet*](https://en.wikipedia.org/wiki/Anonymity#Anonymity_on_the_Internet) (jde o část hesla *[Anonymity](https://en.wikipedia.org/wiki/Anonymity)*)
+rubrics:
+  - checklist: ""
+    items: 
+      - Srhnutí má požadovaný rozsah.
+      - Shrnutí je srozumitelné bez znalosti článku.
+      - Shrnutí neobsahuje faktické chyby.
+---
+# anonymity tech
+bloom: understand
+time: 1h
+params:
+  tech:
+    - "technologie **VPN**"
+    - "technologie **Tor**"
+    - "**relay v síti Tor**"
+    - "technologie **I2P**"
+    - "technologie **Freenet**"
+    - "technika **onion routing**"
+    - "služba **Anonymouse.org**"
+    - "služba **proxy.org**"
+questions: |
+  Na základě zdrojů dohledaných na internetu (uveďte alespoň dva) popište, jak pracuje %tech%. Minimální rozsah odpovědi je 500 znaků (reference zdrojů se nezapočítávají do rozsahu).
+  
+  > Pro inspiraci přikládám několik možných otázek: Jaký je princip fungování? Za jakých podmínek funguje? Kdo provozuje službu, popř. poskytuje technologii? Jaké jsou nevýhody a potenciální problémy?
+rubrics:
+  - checklist: ""
+    items: 
+      - Odpověď má požadovaný rozsah.
+      - V odpovědi jsou uvedeny užité zdroje.
+      - Odpověď je srozumitelná bez pročítání zdrojů.
+      - Odpověď neobsahuje faktické chyby.
+---
+# dark web
+bloom: understand
+time: 1h30
+params:
+  article:
+    - "[Matt Egan: *What is the Dark Web? How to access the Dark Web. What's the difference between the Dark Web and the Deep Web?*](http://www.pcadvisor.co.uk/how-to/internet/what-is-dark-web-how-access-dark-web-deep-joc-beautfiulpeople-3593569/)"
+    - "[Legion (Anonymous): *Over 1 Million Users Access Facebook Via Dark Web*](http://anonhq.com/1-million-users-access-facebook-via-dark-web/)"
+    - "[*Dark Web Is Going Mainstream: How to Use It Safely*](http://www.newschannel10.com/story/31926865/dark-web-is-going-mainstream-how-to-use-it-safely)"
+    - "[Daniel Miessler: *The Internet, the Deep Web, and the Dark Web*](https://danielmiessler.com/study/internet-deep-dark-web/)"
+    - "[Mark Stockley: *3 ways to get busted on the Dark Web*](https://nakedsecurity.sophos.com/2015/09/04/3-ways-to-get-busted-on-the-dark-web/)"
+    - "[Tom Simonite: *The Surprising Light Side of the Dark Web*](https://www.technologyreview.com/s/601073/the-surprising-light-side-of-the-dark-web/)"
+    - "[Ryan Whitwam: *OnionScan tests 'dark web' sites to see if they really are anonymous*](http://www.extremetech.com/internet/226106-onionscan-tests-dark-web-sites-to-see-if-they-really-are-anonymous)"
+    - "[Charlie Osborne: *10 things you didn't know about the Dark Web*](http://www.zdnet.com/pictures/10-things-you-didnt-know-about-the-dark-web/4/) (pozor, článek má 10 krátkých částí)"
+questions: |
+  ### Dark web
+  
+  *Deep web* je část webu, kterou neindexují vyhledávače — sem patří i webové stránky dostupné pouze po přihlášení (např. Facebook) nebo za paywallem. Weby, které jsou součástí tzv. **dark webu** vyžadují pro přístup něco navíc — znalost hesla, šifrování, technologii, atp.
+  
+  #### Zadání úkolu
+
+  Na základě četby textu %article% sepište jeho shrnutí (min. 400 znaků) a v krátkém odstavci pak definujte, co je to *dark web* (dle autora článku). Širší kontext můžete načerpat i z ostatních článků:
+    
+  - [Charlie Osborne: *10 things you didn't know about the Dark Web*](http://www.zdnet.com/pictures/10-things-you-didnt-know-about-the-dark-web/4/) (pozor, článek má 10 krátkých částí)
+  - [Daniel Miessler: *The Internet, the Deep Web, and the Dark Web*](https://danielmiessler.com/study/internet-deep-dark-web/)
+  - [Dark Web I*s Going Mainstream: How to Use It Safely*](http://www.newschannel10.com/story/31926865/dark-web-is-going-mainstream-how-to-use-it-safely)
+  - [Legion (Anonymous): *Over 1 Million Users Access Facebook Via Dark Web*](http://anonhq.com/1-million-users-access-facebook-via-dark-web/)
+  - [Mark Stockley: *3 ways to get busted on the Dark Web*](https://nakedsecurity.sophos.com/2015/09/04/3-ways-to-get-busted-on-the-dark-web/)
+  - [Matt Egan: *What is the Dark Web? How to access the Dark Web. What's the difference between the Dark Web and the Deep Web?*](http://www.pcadvisor.co.uk/how-to/internet/what-is-dark-web-how-access-dark-web-deep-joc-beautfiulpeople-3593569/)
+  - [Ryan Whitwam: *OnionScan tests 'dark web' sites to see if they really are anonymous*](http://www.extremetech.com/internet/226106-onionscan-tests-dark-web-sites-to-see-if-they-really-are-anonymous)
+  - [Tom Simonite: *The Surprising Light Side of the Dark Web*](https://www.technologyreview.com/s/601073/the-surprising-light-side-of-the-dark-web/)
+  
+rubrics:
+  - checklist: ""
+    items: 
+      - Srhnutí má požadovaný rozsah.
+      - Shrnutí je srozumitelné bez znalosti článku.
+      - Shrnutí neobsahuje faktické chyby.
+---
+bloom: evaluate
+time: 30
+questions: |
+  V krátkosti (min. 350 znaků) naznačte, jaký přínos má znalost problematiky *anonymity na internetu a dark webu* pro profesi *informačního profesionála* či *knihovníka* (profesní směřování si vyberte dle svých preferencí).
+rubrics:
+  - checklist: ""
+    items: 
+      - Hodnocení má požadovaný rozsah.
+      - Hodnocení je srozumitelné.
+      - Hodnocení obsahuje přesvědčivou argumentaci.
+  - "Přepište použité argumenty vlastními slovy: vytvořte číslovaný seznam argumentů, jehož položky jsou formulovány ve tvaru: *„Z toho, že [tvrzení A], vyplývá, že [tvrzení B]“*."
+  - "Konfrontujte autorovo/autorčino hodnocení relevance znalosti problematiky se svým vlastním názorem."
+---
+# popis
+bloom: apply
+time: 1h
+params:
+  combinations:
+    - repo1: learn-jekyll
+      user1: JanVokral 
+      repo2: learn-jekyll
+      user2: KT166
+    - repo1: learn-jekyll
+      user1: KT166
+      repo2: learn-jekyll
+      user2: ikeataska
+    - repo1: learn-jekyll
+      user1: ikeataska
+      repo2: KniHra
+      user2: Mikki-nami
+    - repo1: KniHra
+      user1: Mikki-nami
+      repo2: learn-jekyll
+      user2: Hondza
+    - repo1: learn-jekyll
+      user1: Hondza
+      repo2: learn-jekyll
+      user2: TerezaP
+    - repo1: learn-jekyll
+      user1: TerezaP
+      repo2: learn-jekyll
+      user2: '449103'
+    - repo1: learn-jekyll
+      user1: '449103'
+      repo2: learn-jekyll
+      user2: Pechackova
+    - repo1: learn-jekyll
+      user1: Pechackova
+      repo2: learn-jekyll
+      user2: UsernameIsAlreadyTaken16
+    - repo1: learn-jekyll
+      user1: UsernameIsAlreadyTaken16
+      repo2: learn-jekyll
+      user2: MichHajkova
+    - repo1: learn-jekyll
+      user1: MichHajkova
+      repo2: learn-jekyll
+      user2: '400538'
+    - repo1: learn-jekyll
+      user1: '400538'
+      repo2: learn-jekyll
+      user2: danielalunackova
+    - repo1: learn-jekyll
+      user1: danielalunackova
+      repo2: learn-jekyll
+      user2: JanVokral
+questions: |
+    Vyberte si jeden z níže uvedených webů vytvářených týmově v kurzu (pro případy nefunkčnosti a náhodného přiřazení vašeho vlastního webu jsou nabízeny dvě možnosti):
+    
+    - %user1%/%repo1% ([repozitář](http://github.com/%user1%/%repo1%), [web](http://%user1%.github.io/%repo1%/))
+    - %user2%/%repo2% ([repozitář](http://github.com/%user2%/%repo2%), [web](http://%user2%.github.io/%repo2%/))
+    
+    Zhodnoťte, zda je prozatím naplněno zadání (u každého bodu zhodnoťte slovem **ano/ne** a krátce okomentujte):
+      
+    - web informuje o zvoleném tématu způsobem, který byste zhodnotili jako přívětivý
+    - stránka *O webu* (*About*) je naplněna dle zadání
+    - web obsahuje příspěvek, který se týká otevřených dat
+    - na webu je nasazen analytický nástroj Google Analytics
+    - projekt korektně využívá upravených šablon v Jekyllu
+    - vizuální styl je upraven pomocí autorského CSS
+    
+    > **Poznámka:** Toto hodnocení neslouží k bodovému ohodnocení autorů daného webu, takže se nemusíte obávat, že byste autory kritikou poškodili. Právě naopak: kvalitní kritika jim může pomoci k dotažení webu. Buďte struční a výstižní a zhodnoťte všechny aspekty projektu.
+input: markdown
+prefill: |
+  # Vybraný web: ___.github.io/___/
+  
+  ## Stručná charakteristika webu:
+    
+  
+  ## Hodnocení:  
+
+  1) web informuje o zvoleném tématu způsobem, který byste zhodnotili jako přívětivý
+  
+  
+  
+  2) stránka O webu (About) je naplněna dle zadání
+  
+  
+  
+  3) web obsahuje příspěvek, který se týká otevřených dat
+  
+  
+  
+  4) na webu je nasazen analytický nástroj Google Analytics
+  
+  
+  
+  5) projekt korektně využívá upravených šablon v Jekyllu
+  
+  
+  
+  6) vizuální styl je upraven pomocí autorského CSS
+  
+  
+  
+  ## Poznámky a komentáře:
+rubrics:
+  - checklist: "(Při kontrole si dejte pozor na to, že web již může vypadat odlišně než při kontrole: změny však snadno najdete pohledem do historie repozitáře.)"
+    items: 
+      - Je uvedena stručná charakteristika webu.
+      - Hodnocení **přívětivosti** je kompletní, srozumitelné a odpovídá stavu projektu.
+      - Hodnocení **stránky o webu** je kompletní, srozumitelné a odpovídá stavu projektu.
+      - Hodnocení **příspěvku o otevřených datech** je kompletní, srozumitelné a odpovídá stavu projektu.
+      - Hodnocení **nasazení Google Analytics** je uvedeno a odpovídá stavu projektu.
+      - Hodnocení **využívání upravených šablon** je kompletní, srozumitelné a odpovídá stavu projektu.
+      - Hodnocení **vizuálního stylu** je kompletní, srozumitelné a odpovídá stavu projektu.
+---
+bloom: create
+time: 1h
+questions: |
+  Na webu, který jste hodnotili v předchozím úkolu, si vyberte problém či chybu (jakéhokoli charakteru), které jste schopni opravit přímo v kódu. Chybu opravte a opravu zašlete autorům pomocí *pull requestu*. Postupujte systematicky — pokud se tato chyba objevuje v kódu projektu vícekrát, opravte ji všude.
+  
+  Ve vstupním poli uveďte odkaz na pull request. Sestavte jej tak, aby byl pro autory akceptovatelný.
+rubrics:
+  - checklist: ""
+    items: 
+      - Je uveden odkaz na pull request.
+      - Pull request je dobře popsaný.
+      - Pull request opravuje všechny výskyty dané chyby v kódu repozitáře.
