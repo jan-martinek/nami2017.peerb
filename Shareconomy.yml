@@ -1,0 +1,165 @@
+name: "Shareconomy"
+summary: "Sharing economy a závěr kurzu"
+goals: |
+  Tato lekce je poměrně stručná a krátká: podíváme se krátce na fenomén *sharing economy*, na závěr kurzu si přečteme společně esej o budoucnosti internetu a naposledy projdeme vytvořené projekty.
+reading: |
+  > **Poznámka:** Jak jsem zdůrazňoval na semináři, při uvažování o fenoménu *sharing economy* se snažte vnímat dvě roviny: technologickou a společenskou. Nové formy sjednávání práce, nové business modely, nové způsoby zprostředkované interakce pomocí mobilních technologií: to vše proměňuje jak fungují lidé, firmy, úřady nebo i města.
+rubrics:
+  - Slovně zhodnoťte případné nedostatky tohoto úkolu.
+preface: 
+---
+# shareconomy - příklad
+bloom: evaluate
+params:
+  service:
+    - Zipcar
+    - Uber
+    - Lyft
+    - BlaBlaCar
+    - AirBnB
+    - BMW Drive
+    - Whipcar
+    - Rekola
+    - Zimride
+    - Carpooling
+    - Udemy
+    - 9flats.com
+    - Liftago
+    - Kickstarter
+    - Indiegogo
+    - Startovač
+    - Hithit
+    - Skillshare
+    - Craigslist
+    - DogVacay
+    - TaskRabbit
+    - Getaround
+    - NeighbourGoods
+questions: |
+  Na základě vlastnoručně dohledaných a citovaných zdrojů popište službu *%service%*. Zhodnoťte, zda patří k *sharing economy*.
+rubrics:
+  - checklist: ""
+    items: 
+      - Shrnutí má požadovaný rozsah.
+      - Popis je srozumitelný bez dohledávání zdrojů.
+      - Nechybí argumentačně solidní hodnocení, zda daná služba patří k *sharing economy*.
+---
+# shareconomy - článek
+bloom: understand
+questions: |
+  Dohledejte si tři zdroje:
+  
+  - obecný popis fenoménu *sharing economy* (mimo Wikipedii)
+  - článěk pozitivně referující o konkrétní službě, kterou je možné zařadit do kategorie sharing economy
+  - článěk negativně referující o konkrétní službě, kterou je možné zařadit do kategorie sharing economy
+  
+  Na základě těchto tří zdrojů shrňte, co je to *sharing economy* a zhodnoťte vlastní postoj vůči tomuto fenoménu.
+rubrics:
+  - checklist: ""
+    items: 
+      - Dohledané zdroje odpovídají zadání.
+      - Shrnutí odpovídá zvoleným zdrojům.
+      - Termín *sharing economy* je užíván správně.
+      - Odpověď obsahuje vlastního postoje autora/autorky vůči *sharing economy*.
+---
+# everything is broken
+bloom: understand
+questions: |
+  Přečtěte si článek [Quinn Norton: Everything is Broken](https://medium.com/message/everything-is-broken-81e5f33a24e1). Krátce jej shrňte a zaujměte k němu (v několika větách) postoj.
+rubrics:
+  - checklist: ""
+    items: 
+      - Shrnutí je výstižné.
+      - Neschází formulace vlastního postoje vůči článku.
+      - Formulovaný postoj se nemíjí s tím, co článek sděluje.
+---
+# projekt
+bloom: evaluate
+params:
+  combinations:
+    - repo1: learn-jekyll
+      user1: JanVokral 
+      repo2: learn-jekyll
+      user2: KT166
+    - repo1: learn-jekyll
+      user1: KT166
+      repo2: learn-jekyll
+      user2: ikeataska
+    - repo1: learn-jekyll
+      user1: ikeataska
+      repo2: KniHra
+      user2: Mikki-nami
+    - repo1: KniHra
+      user1: Mikki-nami
+      repo2: learn-jekyll
+      user2: Hondza
+    - repo1: learn-jekyll
+      user1: Hondza
+      repo2: learn-jekyll
+      user2: TerezaP
+    - repo1: learn-jekyll
+      user1: TerezaP
+      repo2: learn-jekyll
+      user2: '449103'
+    - repo1: learn-jekyll
+      user1: '449103'
+      repo2: learn-jekyll
+      user2: Pechackova
+    - repo1: learn-jekyll
+      user1: Pechackova
+      repo2: learn-jekyll
+      user2: UsernameIsAlreadyTaken16
+    - repo1: learn-jekyll
+      user1: UsernameIsAlreadyTaken16
+      repo2: learn-jekyll
+      user2: MichHajkova
+    - repo1: learn-jekyll
+      user1: MichHajkova
+      repo2: learn-jekyll
+      user2: '400538'
+    - repo1: learn-jekyll
+      user1: '400538'
+      repo2: learn-jekyll
+      user2: danielalunackova
+    - repo1: learn-jekyll
+      user1: danielalunackova
+      repo2: learn-jekyll
+      user2: JanVokral
+questions: |
+    Vyberte si jeden z níže uvedených webů vytvářených týmově v kurzu (pro případy nefunkčnosti a náhodného přiřazení vašeho vlastního webu jsou nabízeny dvě možnosti):
+    
+    - %user1%/%repo1% ([repozitář](http://github.com/%user1%/%repo1%), [web](http://%user1%.github.io/%repo1%/))
+    - %user2%/%repo2% ([repozitář](http://github.com/%user2%/%repo2%), [web](http://%user2%.github.io/%repo2%/))
+        
+    Komplexně zhodnoťte zpracovaný projekt s ohledem na zadání projektů v průběhu semestru: 
+    
+    1. Vytvořte pět základních kategorií hodnocení, které argumentačně podložte. 
+    2. Následně v každé z těchto kategorií ohodnoťte projekt na stupnici 1–5 (jako ve škole) a hodnocení vždy slovně zdůvodněte.
+    
+    Celé hodnocení by mělo obsahovat alespoň 1000 znaků.
+input: markdown
+prefill: |
+  # Vybraný web: _________.github.io
+  
+  Hodnocení:
+rubrics:
+  - checklist: ""
+    items: 
+      - Odpověď má požadovaný rozsah.
+      - Kategorie jsou zvoleny vhodně. 
+      - Slovní hodnocení není snadno zpochybnitelné.
+  - "Krátce okomentujte zvolené kategorie hodnocení. Porovnejte je s kategoriemi, které jste zvolili vy sami."
+---
+# google analytics
+bloom: apply
+input: file
+comments: 10
+questions: |
+  Vyberte si metriku v účtu Google Analytics, která ukazuje u vašeho týmového projektu nenulové hodnoty v posledních dvou měsících. Vložte *screenshot* grafu a případně též části tabulek (dle vlastního zvážení) do přílohy a okomentujte, co jednotlivé hodnoty označují a znamenají. (Pokud neznamenají nic anebo nedovedete vůbec nic identifikovat, vyberte jinou metriku.)
+  
+  Pokud v týmu nemáte sdílený přístup do Google Analytics, nechte si [přístup nasdílet](https://www.google.cz/?client=safari#q=sd%C3%ADlet+př%C3%ADstup+google+analytics&gfe_rd=cr).
+rubrics:
+  - checklist: ""
+    items: 
+      - Screenshot je dobře vybrán.
+      - Interpretace naměřených hodnot je správná.
