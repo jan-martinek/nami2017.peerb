@@ -1,0 +1,185 @@
+name: "Závěrečný test"
+summary: "Závěrečný test kurzu (probíhá na internetu, můžete se připojit z libovolného místa)."
+goals: |
+  Test trvá 90 minut. **Jde o tzv. open-book test:** Během zkoušky můžete využívat přístup k internetu či jakékoli jiné informační zdroje. Jediná nepovolená aktivita během testu je komunikace s dalšími osobami.
+      
+  Důraz je kladen na schopnost aplikace zvládnuté látky — ať už jde o praktické úkoly nebo o schopnost kritické práce s představenými koncepty. V testu naleznete 10 úkolů, které jsou hodnoceny po dvou bodech (0 = nesplněno, 1 = nesplněno, ale je zřejmé pochopení principů, 2 = splněno). Hodnocení provádí vyučující. V testu potřebujete získat 13 bodů (65 %). 
+  
+  Více k hodnocení kurzu najdete na [stránce předmětu](https://is.muni.cz/predmet/phil/jaro2017/VIKBA07).  
+  
+  ### Poznámky:
+    
+  - Pokud je v otázce požadována formulace vlastního názoru, snažte se být struční a výstižní a **vždy jej podložte konkrétními a přesvědčivými argumenty**.
+  - Pokud je v úkolech zmiňováno, že máte odkázat na „váš vlastní repozitář“, jde o jakýkoliv repozitář, který je přiřazen k vašemu účtu (i pokud jde o klon cizího repozitáře). Pokud je zmíněn „váš vlastní commit“, jde vždy o commit, který jste udělali přímo vy (stejně tak v případě pull requestu). **Vždy se odkazujte na již odvedenou práci v semestru, nevytvářejte nové změny.**
+  - Úkolů je 10, v průměru tedy máte 9 minut na jeden úkol. Pokud vás něco zdrží, zkuste jiný úkol.
+  - Pokud není řečeno jinak, jsou u úkolů, které vyžadují formulaci názoru, očekávány odpovědi v rozsahu alespoň 400 znaků.
+reading:
+rubrics:
+  - "Tato lekce není určena ke vzájemnému hodnocení."
+preface:
+---
+# verzování, git, github
+bloom: understand
+questions:
+  - "Popište, jakým způsobem dochází ke sdílení kódu mezi spolupracovníky prostřednictvím verzovacího systému. Ilustrujte příklady z vlastní aktivity v kurzu."
+  - "Popište, k čemu slouží při tvorbě obsahu verzování. Ilustrujte příklady z vlastní aktivity v kurzu."
+  - "Popište, k čemu slouží při vývoji softwaru verzování. Ilustrujte příklady z vlastní aktivity v kurzu."
+  - "Popište, jak jste v týmu využívali verzovací systém při spolupráci na projektu. Ilustrujte příklady."
+  - "Je užitečné využívat verzovací systém i pokud jste jediným autorem/autorkou projektu? Argumentačně obhajte svůj názor."
+---
+# verzování, git, github - prakticky
+bloom: evaluate
+questions:
+  - "Na příkladu *commitu*, který jste vytvořil/a kdykoli v průběhu semestru, demonstrujte klíčové vlastnosti dobrého commitu."
+  - "Na příkladu *pull requestu*, který jste vytvořil/a kdykoli v průběhu semestru, demonstrujte klíčové vlastnosti dobrého *pull requestu*."
+  - "Popište svou práci s repozitáři v průběhu semestru — pojmenujte úkony, služby, aplikace atp. a popište, v jakém kontextu jste je využíval/a."
+  - "Popište, jak jste v průběhu semestru používal/a aplikaci Github Desktop (popř. obdobný klient)."
+  - "Ukažte na příkladu, jak najít změny v konkrétním commitu pomocí služby Github a popište, jakým způsobem je Github prezentuje."
+---
+# css, selektory, vlastnosti
+bloom: understand
+questions:
+  - "Na konkrétním příkladu CSS kódu ve vlastním commitu ukažte selektor třídy (přiložte odkaz na commit)."
+  - "Na konkrétním příkladu CSS kódu ve vlastním commitu popište různé druhy selektorů (přiložte odkaz na commit)."
+  - "Vyjmenujte pět vlastností CSS, které popisují zobrazování textu, a odkažte na konkrétní příklady, kde je prakticky užíváte (odkažte na soubor ve vlastním repozitáři nebo commit)."
+  - "Vyjmenujte pět vlastností CSS, které popisují něco jiného, než způsob zobrazení textu, a odkažte na konkrétní příklady, kdy je prakticky užíváte (odkažte na soubor ve vlastním repozitáři nebo commit)."
+---
+# css, selektory, vlastnosti - prakticky
+params:
+  fontFamily:
+    - "Georgia, serif"
+    - "'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+    - "'Times New Roman', Times, serif"
+    - "Arial, Helvetica, sans-serif"
+    - "'Arial Black', Gadget, sans-serif"
+    - "'Comic Sans MS', cursive, sans-serif"
+    - "Impact, Charcoal, sans-serif"
+    - "'Lucida Sans Unicode', 'Lucida Grande', sans-serif"
+    - "Tahoma, Geneva, sans-serif"
+    - "'Trebuchet MS', Helvetica, sans-serif"
+    - "Verdana, Geneva, sans-serif"
+    - "'Courier New', Courier, monospace"
+  fontSize:
+    - 12pt
+    - 20pt
+    - 32pt
+  color:
+    - red
+    - blue
+    - green
+    - yellow
+  misc:
+    - "text-decoration: underline"
+    - "font-style: italic"
+    - "font-weight: bold"
+    - "font-variant: small-caps"
+    - "text-align: right"
+    - "text-align: center"
+    - "background: brown"
+    - "background: purple"
+bloom: apply
+questions: |
+    Vepište CSS deklaraci pro daný odstavec tak, aby se výsledek co nejlépe podobal příkladu (nezasahujte do HTML; rámeček u příkladu a šedé pozadjí nejsou jeho součástí): 
+  
+    <div style="border: 1px solid #ddd; background: #eee; padding: 20px">
+      <p style="font-family: %fontFamily%; font-size: %fontSize%; color: %color%; %misc%">Bezbarvé zelené myšlenky zuřivě spí.</p>
+      <p style="font-family: sans-serif"><i>Noam Chomsky</i></p>
+    </div>
+    
+    Při práci využijte nástroj, který vám umožní průběžný náhled vykreslené webové stránky. Do komentáře uveďte, jaký nástroj jeste použil/a.
+input: html
+comments: 1
+prefill: |
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Příklad CSS</title>
+      <style>
+        
+      </style>
+    </head>
+    <body>
+      <h1>Nesmysl</h1>
+      <blockquote>
+        <p>Bezbarvé zelené myšlenky zuřivě spí.</p>
+        <cite>Noam Chomsky</cite>  
+      </blockquote>
+    </body>
+  </html>
+---
+# otevřený software, open source
+# tim berners lee a web, síťová neutralita
+# otevřené licence, otevřená data
+bloom: evaluate
+questions:
+  - "Popište, dle čeho byste vybírali otevřenou licenci pro svůj (reálný či smyšlený) projekt."
+  - "Formulujte vlastní názor na problematiku *síťové neutrality* a argumentačně jej podložte."
+  - "Formulujte vlastní názor na problematiku *svobodného software* a argumentačně jej podložte."
+  - "Formulujte vlastní názor na problematiku *otevřených dat* a argumentačně jej podložte."
+  - "Zhodnoťte, nakolik se současný web podobá původním představám jeho tvůrce. Formulujte vlastní názor na popsané podobnosti a rozdíly."
+---
+# anonymita na internetu, tor, onion routing
+# dark web, deep web, sci-hub
+bloom: analyze
+questions:
+  - "Vysvětlete, jaký je rozdíl mezi *soukromím* (privacy) a *anonymitou* (anonymity) na internetu."
+  - "Na příkladu služby *Sci-Hub* vysvětlete, co je to *dark web*."
+  - "Na příkladu maretu *Silk Road* vysvětlete, co je to *dark web*."
+  - "Formulujte vlastní názor na problematiku *dark webu* a argumentačně jej podložte."
+  - "Vysvětlete, co je to *Tor browser* a formulujte vlastní názor na jeho užitečnost."
+  - "Popište, jaká jsou rizika „dark webu“ a jak se liší od rizik na „běžném“ webu."
+  - "Vysvětlete, k čemu může být užitečná anonymita na internetu — z úvahy vynechte případy, kdy jde o překračování zákona."
+---
+# publikování, cms, wp, tumblr, jekyll, blogger
+bloom: understand
+params:
+  term:
+    - labeling
+    - navigace
+    - nalezitelnost
+    - reprezentace
+    - dokument
+    - organizování
+    - obsah
+    - kontext
+    - uživatel
+    - metadata
+    - struktura
+questions: 
+  - "Vysvětlete v kontextu informační architektury **vlastními slovy** termín *%term%*. (Postupujte, jakobyste měli termín vysvětlit posluchači bez znalosti IA — vysvětlete daný termín a uveďte, z jakého důvodu je podstatný při práci s *libovolným obsahem*. Ilustrujte jej příkladem z vlastní aktivity v průběhu semestru.)"
+---
+# IA termíny
+# šablonování v Jekyllu, MD front matter, _config
+bloom: analyze
+questions:
+  - "Na příkladech z vlastní praxe (v kurzu i mimo něj) popište způsoby, kterými publikujete webový obsah. Ilustrujte pomocí odkazů, pokud je to možné."
+  - "Popište, z jakých součástí se generuje stránka v Jekyllu (jednotlivé součásti předveďte ve vlastním repozitáři)."
+  - "Vysvětlete, co je to *YAML front matter*. Předveďte jeho užití na ukázce kódu ve vlastním repozitáři."
+  - "Vysvětlete vlastními slovy, jak v šabloně Jekyllu získat obsah proměnné, kterou jste deklarovali v souboru `_config.yml`. Předveďte to na ukázce kódu ve vlastním repozitáři."
+  - "Vysvětlete vlastními slovy, jak v šabloně Jekyllu získat obsah proměnné, kterou jste deklarovali v konkrétním příspěvku (souboru ve složce `_posts`). Předveďte to na ukázce kódu ve vlastním repozitáři."
+---
+# IP, DNS
+# iframe, embed
+# api, automatizace, IFTTT, IoT,
+# big data, MapReduce, GA, metriky
+bloom: analyze
+questions:
+  - "Na příkladu z týmového projektu (můžete využít i cizí projekt) vysvětlete, k čemu je užitečné *embedování* (embedding)."
+  - "Popište, jak funguje prvek `iframe`, a ilustrujte to příkladem v libovolném repozitáři, do kterého jste v průběhu kurzu přispěl(a)."
+  - "Stručně popište alespoň tři metriky, které umožňuje měřit nástroj *Google Analytics*, s nimiž jste se setkali při práci na týmovém projektu."
+  - "Popište, jak pracuje služba IFTTT na příkladu dvou „appletů“, které jste zatím v průběhu kurzu nepoužili."
+  - "Popište, co jsou to *big data*, a formulujte vlastní názor na tento fenomén."
+  - "Stručně popište, co je to *Internet of Things* (IoT), a formulujte vlastní názor na tento fenomén."
+---
+# web2.0, wiki, MOOC
+# sharing economy
+# algoritmicky vytvářený feed
+bloom: analyze
+questions:
+  - "Vysvětlete, co je to *wiki*, a formulujte vlastní názor na užitečnost obsahu, který je tvořen tímto způsobem."
+  - "Popište (pokud možno na základě vlastní zkušenosti), co je to algoritmicky vytvářený feed a jak můžete v případě sociální sítě Facebook záměrně či nezáměrně ovlivnit, jaké výsledky algoritmus vrací."
+  - "Popište, jaké služby zařaditelné ke konceptu *Web 2.0* sami využíváte (alespoň 3 příklady)."
+  - "Popište, na jakém principu jsou založeny *wiki* nástroje (nejen *Wikipedia*), a formulujte svůj názor na efektivitu takového přístupu."
+  - "Popište, co je to *sharing economy*, a formulujte svůj názor na tento fenomén."
+  - "Popište, co jsou to *MOOC* a zhodnoťte, zda je o fenomén, který je pro vás relevantní."
+  - "Uveďte dva příklady služeb z kategorie *sharing economy*, které se setkaly s negativním přijetím skupin veřejnosti (místních komunit, úřadů, zaměstnanců v určitém oboru atp.). Ve strukčnosti popište, proč k tomu došlo a stručně formulujte vlastní názor na problematiku."
